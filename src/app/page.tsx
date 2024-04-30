@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
-      <div className="m-4 p-4 border border-border rounded-3xl">
+      {/* <div className="m-4 p-4 border border-border rounded-3xl">
         <Image
           src={heroImageLight}
           alt="Hero"
@@ -27,9 +27,9 @@ export default function Home() {
           priority
           className="rounded-xl dark:block hidden"
         />
-      </div>
-      <Partners />
-      <Plans />
+      </div> */}
+      {/* <Partners />
+      <Plans /> */}
     </div>
   );
 }

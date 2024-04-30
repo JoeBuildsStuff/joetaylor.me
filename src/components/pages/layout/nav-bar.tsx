@@ -40,15 +40,18 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
   return (
     <nav className="sticky top-0 z-50 border-b border-border/40 backdrop-blur flex items-center justify-between flex-wrap p-8">
       <Link href="/" className="flex items-center mr-6">
-        <span className="font-bold text-2xl">Fullstack</span>
+        <span className="font-bold text-2xl">JoeTaylor.us</span>
       </Link>
       <div className="flex items-center gap-3">
         <Button variant="ghost" className="hidden md:block text-md">
           <Link href="/blog">Blog</Link>
         </Button>
         <Button variant="ghost" className="hidden md:block text-md">
-          <Link href="/pricing">Pricing</Link>
+          <Link href="/projects">Projects</Link>
         </Button>
+        {/* <Button variant="ghost" className="hidden md:block text-md">
+          <Link href="/pricing">Pricing</Link>
+        </Button> */}
         <SignedOut>
           <SignInButton>
             <Button variant="outline" className="text-md">
@@ -57,7 +60,7 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
           </SignInButton>
           <SignUpButton>
             <Button variant="default" className="text-md">
-              Get Started
+              Join the Club
             </Button>
           </SignUpButton>
         </SignedOut>
@@ -69,7 +72,6 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
         <SignedIn>
           <UserButton />
         </SignedIn>
-
         <ModeToggle />
       </div>
     </nav>

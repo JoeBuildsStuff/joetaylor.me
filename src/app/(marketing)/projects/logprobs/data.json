@@ -1,0 +1,2124 @@
+{
+  "version": "v2.1",
+  "data": [
+    {
+      "title": "The Great Depression in Germany",
+      "paragraphs": [
+        {
+          "context": "The Great Depression hit Germany hard. The impact of the Wall Street Crash forced American banks to end the new loans that had been funding the repayments under the Dawes Plan and the Young Plan. The financial crisis escalated out of control in mid-1931, starting with the collapse of the Credit Anstalt in Vienna in May.",
+          "qas": [
+            {
+              "question": "What event triggered the financial crisis in Germany in 1931?",
+              "id": "ae9c15a8-a263-4bc2-8974-c96b12c369fb",
+              "answers": [
+                {
+                  "text": "the collapse of the Credit Anstalt in Vienna",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the impact of the Wall Street Crash on Germany?",
+              "id": "c1d4033f-9ce7-43e3-9b5a-e124be27d461",
+              "answers": [
+                {
+                  "text": "American banks ended new loans that had been funding the repayments under the Dawes Plan and the Young Plan",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "When did the financial crisis in Germany escalate out of control?",
+              "id": "bb502d3a-3f82-4f47-a5dc-2c8916d36888",
+              "answers": [
+                {
+                  "text": "mid-1931",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "a033afff-f464-45d9-983b-a27796fe1400",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the German government respond to the crisis?",
+              "id": "fe39808b-dc39-4e32-8653-906f1b6c24b6",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "In 1932, 90% of German reparation payments were cancelled (in the 1950s, Germany repaid all its missed reparations debts). Widespread unemployment reached 25% as every sector was hurt. The government did not increase government spending to deal with Germany's growing crisis, as they were afraid that a high-spending policy could lead to a return of the hyperinflation that had affected Germany in 1923.",
+          "qas": [
+            {
+              "question": "What percentage of German reparation payments were cancelled in 1932?",
+              "id": "a4cc1560-ffe2-482d-88f3-8b9b9d448c46",
+              "answers": [
+                {
+                  "text": "90%",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the unemployment rate in Germany in 1932?",
+              "id": "444e9c5a-b7b9-49c4-b68f-33a9b2556945",
+              "answers": [
+                {
+                  "text": "25%",
+                  "answer_start": 15
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why did the German government not increase government spending to deal with the crisis?",
+              "id": "c1d3b975-ddd0-4b97-9494-d0b37fc91942",
+              "answers": [
+                {
+                  "text": "they were afraid that a high-spending policy could lead to a return of the hyperinflation that had affected Germany in 1923",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main consequence of the government's decision not to increase spending?",
+              "id": "2aeedf79-96e2-4d1c-93c1-e8b79c1eaf4d",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the cancellation of reparation payments affect the German economy?",
+              "id": "44f543a1-32fc-4258-bb0b-cdb59968e8d5",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Pyramid of Giza",
+      "paragraphs": [
+        {
+          "context": "A hillock forms the base on which the pyramid stands. It was cut back into steps and only a strip around the perimeter was leveled, which has been measured to be horizontal and flat to within 21 millimetres (0.8 in). The bedrock reaches a height of almost 6 metres (20 ft) above the pyramid base at the location of the Grotto.",
+          "qas": [
+            {
+              "question": "What is the base of the Great Pyramid of Giza?",
+              "id": "74d32486-c998-4c38-b59f-eb6bc340395e",
+              "answers": [
+                {
+                  "text": "a hillock",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How flat is the base of the Great Pyramid of Giza?",
+              "id": "42b19c00-37e3-445d-bbbc-ea0a78359e6b",
+              "answers": [
+                {
+                  "text": "horizontal and flat to within 21 millimetres (0.8 in)",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How high is the bedrock above the pyramid base at the location of the Grotto?",
+              "id": "5ec6f1c6-22d9-4a6b-af2c-36319f0ac745",
+              "answers": [
+                {
+                  "text": "almost 6 metres (20 ft)",
+                  "answer_start": 41
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the purpose of the Grotto?",
+              "id": "24899b4e-0c94-4654-9ac3-70b86c67ab1e",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How was the base of the pyramid leveled?",
+              "id": "93b0021d-8505-4c6c-a5e6-229663dc3101",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The Great Pyramid consists of an estimated 2.3 million blocks. Approximately 5.5 million tonnes of limestone, 8,000 tonnes of granite, and 500,000 tonnes of mortar were used in the construction.",
+          "qas": [
+            {
+              "question": "How many blocks are estimated to be in the Great Pyramid?",
+              "id": "8508c829-906b-4123-ae57-020b2e5aef9e",
+              "answers": [
+                {
+                  "text": "2.3 million",
+                  "answer_start": 10
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How much limestone was used in the construction of the Great Pyramid?",
+              "id": "dfbd813f-461a-44e6-83c3-88d4fa1b7ca7",
+              "answers": [
+                {
+                  "text": "5.5 million tonnes",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How much granite was used in the construction of the Great Pyramid?",
+              "id": "d1d4d3e5-ca48-48eb-8020-e663754a75dd",
+              "answers": [
+                {
+                  "text": "8,000 tonnes",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How long did it take to build the Great Pyramid?",
+              "id": "749940f9-c17a-4560-aed2-bee34e338369",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "Who designed the Great Pyramid?",
+              "id": "31998c2e-f798-4212-9973-f7bdff8acd14",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Pyramid of Giza",
+      "paragraphs": [
+        {
+          "context": "During late antiquity, a misinterpretation of the pyramids as \"Joseph's granary\" began to gain in popularity. The first textual evidence of this connection is found in the travel narratives of the female Christian pilgrim Egeria, who records that on her visit between 381 and 384 AD, \"in the twelve-mile stretch between Memphis and Babylonia [= Old Cairo] are many pyramids, which Joseph made in order to store corn.\" Ten years later the usage is confirmed in the anonymous travelogue of seven monks that set out from Jerusalem to visit the famous ascetics in Egypt, wherein they report that they \"saw Joseph's granaries, where he stored grain in biblical times\".",
+          "qas": [
+            {
+              "question": "Who is associated with the pyramids being used as granaries?",
+              "id": "e96d004b-5689-4bf3-bc64-34e46be8e36d",
+              "answers": [
+                {
+                  "text": "Joseph",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the purpose of the pyramids according to Egeria?",
+              "id": "bb139dd4-a66d-42ad-9464-f80a697bd673",
+              "answers": [
+                {
+                  "text": "to store corn",
+                  "answer_start": 44
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who wrote about the pyramids being called the \"granaries of Joseph\"?",
+              "id": "3b3d5621-7d6c-46d4-b40b-a806944ba5fa",
+              "answers": [
+                {
+                  "text": "Julius Honorius",
+                  "answer_start": 75
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the name of the female Christian pilgrim who wrote about the pyramids?",
+              "id": "d3c46494-ce1c-41a5-b086-49913e98c54c",
+              "plausible_answers": [
+                {
+                  "text": "Egeria",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What is the name of the book that mentions the pyramids being used as granaries?",
+              "id": "0c167b52-15ff-4a43-b685-1954e4676579",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The Abbasid Caliph al-Ma'mun (786\u2013833 CE) is said to have tunneled into the side of the Great Pyramid. In the seventh century AD, the Rashidun Caliphate conquered Egypt, ending several centuries of Romano-Byzantine rule. A few centuries later, in 832 AD, the Abbasid caliph al-Ma'mun (786\u2013833) is said to have tunneled into the side of the structure and discovered the ascending passage and its connecting chambers.",
+          "qas": [
+            {
+              "question": "Who tunneled into the side of the Great Pyramid?",
+              "id": "6ba2ddfa-51de-46dc-90cb-4c3c02ad4b45",
+              "answers": [
+                {
+                  "text": "al-Ma'mun",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What century did the Rashidun Caliphate conquer Egypt?",
+              "id": "7932b7aa-3c7d-4483-9887-51e3d6cdc288",
+              "answers": [
+                {
+                  "text": "seventh",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What did al-Ma'mun discover in the Great Pyramid?",
+              "id": "b7cb5850-81bc-4b45-b6f8-d8d73c1fef10",
+              "answers": [
+                {
+                  "text": "the ascending passage and its connecting chambers",
+                  "answer_start": 43
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the name of the caliphate that conquered Egypt?",
+              "id": "d330dd0d-f5fe-435d-9a71-a93e67e3cc5e",
+              "plausible_answers": [
+                {
+                  "text": "Rashidun Caliphate",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What is the name of the structure that al-Ma'mun tunneled into?",
+              "id": "17a29939-6ab3-4dcc-9735-06b10521780f",
+              "plausible_answers": [
+                {
+                  "text": "the Great Pyramid",
+                  "answer_start": 10
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Greece during the Great Depression",
+      "paragraphs": [
+        {
+          "context": "The reverberations of the Great Depression hit Greece in 1932. The Bank of Greece tried to adopt deflationary policies to stave off the crises that were going on in other countries, but these largely failed. For a brief period, the drachma was pegged to the U.S. dollar, but this was unsustainable given the country's large trade deficit and the only long-term effects of this were Greece's foreign exchange reserves being almost totally wiped out in 1932.",
+          "qas": [
+            {
+              "question": "When did the Great Depression hit Greece?",
+              "id": "d667616c-10a0-4da9-966f-286f6be860d2",
+              "answers": [
+                {
+                  "text": "1932",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the effect of pegging the drachma to the U.S. dollar?",
+              "id": "90869053-6d2f-481a-92c7-f429457caa13",
+              "answers": [
+                {
+                  "text": "Greece's foreign exchange reserves being almost totally wiped out",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why was the drachma pegged to the U.S. dollar unsustainable?",
+              "id": "6b673bfb-3b42-4103-b66b-28fb61a348a9",
+              "answers": [
+                {
+                  "text": "given the country's large trade deficit",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the global economic situation during the 1930s?",
+              "id": "22f6267f-042c-4006-87e7-a8038b0aa7c4",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did other European countries respond to the Great Depression?",
+              "id": "a9ac899e-3acd-4d9e-8720-11cd0853a6b2",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "Protectionist policies coupled with a weak drachma, stifling imports, allowed the Greek industry to expand during the Great Depression. In 1939, the Greek industrial output was 179% that of 1928. These industries were for the most part \"built on sand\" as one report of the Bank of Greece put it, as without massive protection they would not have been able to survive.",
+          "qas": [
+            {
+              "question": "What was the effect of protectionist policies on the Greek industry?",
+              "id": "c0afe129-eb65-4947-a969-0a0050966531",
+              "answers": [
+                {
+                  "text": "allowed the Greek industry to expand",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the Greek industrial output in 1939 compared to 1928?",
+              "id": "4c3f8254-3358-4f18-929a-775df5faf6c1",
+              "answers": [
+                {
+                  "text": "179%",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why would the Greek industries not have been able to survive without massive protection?",
+              "id": "9a031693-2dd0-473d-b307-5c302c8a9bf7",
+              "answers": [
+                {
+                  "text": "they were built on sand",
+                  "answer_start": 39
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the global economic situation during the 1940s?",
+              "id": "7c4abd11-5ac2-483d-8ddc-111c3b22cd82",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the Greek government respond to the Great Depression?",
+              "id": "7ced8344-cd94-40e7-99de-588c719a0dac",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Comparison with the Great Recession",
+      "paragraphs": [
+        {
+          "context": "The worldwide economic decline after 2008 has been compared to the 1930s. The causes of the Great Recession seem similar to the Great Depression, but significant differences exist. The then-chairman of the Federal Reserve, Ben Bernanke, had extensively studied the Great Depression as part of his doctoral work at MIT, and implemented policies to manipulate the money supply and interest rates in ways that were not done in the 1930s.",
+          "qas": [
+            {
+              "question": "What is the comparison being made in this passage?",
+              "id": "3dd6f3fb-8376-4e21-aa3c-fdb78e427ee7",
+              "answers": [
+                {
+                  "text": "the worldwide economic decline after 2008 to the 1930s",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who is mentioned as having studied the Great Depression?",
+              "id": "892aed76-00f6-49b1-801e-6839fbf56479",
+              "answers": [
+                {
+                  "text": "Ben Bernanke",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What did Ben Bernanke implement to address the Great Recession?",
+              "id": "4a8b6a72-58e6-4b22-8b19-fe2370b0eb33",
+              "answers": [
+                {
+                  "text": "policies to manipulate the money supply and interest rates",
+                  "answer_start": 43
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the main cause of the Great Recession?",
+              "id": "8178af2e-2fce-4a0c-8200-0e6dada0da4c",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How does the author feel about the current economic situation?",
+              "id": "93230ae2-7dd3-4073-8b19-398cac0c4f3a",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "1928 and 1929 were the times in the 20th century that the wealth gap reached such skewed extremes; half the unemployed had been out of work for over six months, something that was not repeated until the late-2000s recession. 2007 and 2008 eventually saw the world reach new levels of wealth gap inequality that rivalled the years of 1928 and 1929.",
+          "qas": [
+            {
+              "question": "What years are mentioned as having extreme wealth gaps?",
+              "id": "46b32716-f972-48cb-8076-64424b8e04e8",
+              "answers": [
+                {
+                  "text": "1928 and 1929",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What happened to the unemployed in 1928 and 1929?",
+              "id": "a1b0f3de-949a-444b-88f1-7ad17bc16024",
+              "answers": [
+                {
+                  "text": "half the unemployed had been out of work for over six months",
+                  "answer_start": 15
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "When did the world reach new levels of wealth gap inequality?",
+              "id": "60caa41f-eeff-44ae-82f4-031fc7bd2b05",
+              "answers": [
+                {
+                  "text": "2007 and 2008",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the main reason for the wealth gap?",
+              "id": "0ba48918-f91c-45cf-8389-7abe8ea8e990",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How does the author think the current economic situation will end?",
+              "id": "a3489e60-db69-4cb0-8507-4904ae03acb2",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression",
+      "paragraphs": [
+        {
+          "context": "In most countries of the world, recovery from the Great Depression began in 1933. In the U.S., recovery began in early 1933, but the U.S. did not return to 1929 GNP for over a decade and still had an unemployment rate of about 15% in 1940, albeit down from the high of 25% in 1933.",
+          "qas": [
+            {
+              "question": "When did recovery from the Great Depression begin in most countries?",
+              "id": "f79521bf-d3c5-4d28-b38a-67fc9c34afe4",
+              "answers": [
+                {
+                  "text": "1933",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the unemployment rate in the U.S. in 1940?",
+              "id": "579d8b5e-a31a-4f16-90c2-d9a223f26850",
+              "answers": [
+                {
+                  "text": "about 15%",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the high unemployment rate in 1933?",
+              "id": "14f97a89-bed0-4e89-8652-092b6f792b0f",
+              "answers": [
+                {
+                  "text": "25%",
+                  "answer_start": 43
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "d57d1539-0751-4669-a1d3-4687a253f8cc",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How long did it take for the U.S. to return to 1929 GNP?",
+              "id": "6407abb3-d89b-4d51-9b08-d43f44ec4477",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "Among the few women in the labor force, layoffs were less common in the white-collar jobs and they were typically found in light manufacturing work. However, there was a widespread demand to limit families to one paid job, so that wives might lose employment if their husband was employed.",
+          "qas": [
+            {
+              "question": "Where were layoffs less common for women in the labor force?",
+              "id": "f79c6d84-4cb7-40fb-bd34-ee3cff77938c",
+              "answers": [
+                {
+                  "text": "white-collar jobs",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What type of work were women typically found in?",
+              "id": "3af1d7da-1152-4b96-b361-4bf3c63a351c",
+              "answers": [
+                {
+                  "text": "light manufacturing work",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why might wives lose employment?",
+              "id": "a0d39c60-85d8-4b17-8bb6-f8ab7ce79fb7",
+              "answers": [
+                {
+                  "text": "if their husband was employed",
+                  "answer_start": 39
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main occupation of women during the Great Depression?",
+              "id": "acde63b5-dc2c-4590-bbaa-23826b6fbda0",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many women were in the labor force during the Great Depression?",
+              "id": "bdd10f50-41d2-4d77-8225-b2d1750f1561",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression in Poland",
+      "paragraphs": [
+        {
+          "context": "Poland was affected by the Great Depression longer and stronger than other countries due to inadequate economic response of the government and the pre-existing economic circumstances of the country. At that time, Poland was under the authoritarian rule of Sanacja, whose leader, J\u00f3zef Pi\u0142sudski, was opposed to leaving the gold standard until his death in 1935. As a result, Poland was unable to perform a more active monetary and budget policy.",
+          "qas": [
+            {
+              "question": "Why was Poland affected by the Great Depression longer and stronger than other countries?",
+              "id": "3e0eafdf-8529-443f-8f88-71a770bc906e",
+              "answers": [
+                {
+                  "text": "inadequate economic response of the government and the pre-existing economic circumstances of the country",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who was the leader of Sanacja?",
+              "id": "5541cedf-a9ff-457c-a7ff-f318e10d2772",
+              "answers": [
+                {
+                  "text": "J\u00f3zef Pi\u0142sudski",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was J\u00f3zef Pi\u0142sudski opposed to until his death in 1935?",
+              "id": "842691b9-7111-4e11-903d-92b9cd05a6f9",
+              "answers": [
+                {
+                  "text": "leaving the gold standard",
+                  "answer_start": 35
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "918baa1f-e89d-4545-9982-a626461ec109",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the Great Depression affect other European countries?",
+              "id": "1dc7ba1e-eb01-46d0-8ed1-e4fa5bbe0e13",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "Industrial production fell significantly: in 1932 hard coal production was down 27% compared to 1928, steel production was down 61%, and iron ore production noted an 89% decrease. On the other hand, electrotechnical, leather, and paper industries noted marginal increases in production output. Overall, industrial production decreased by 41%.",
+          "qas": [
+            {
+              "question": "By how much did hard coal production decrease in 1932 compared to 1928?",
+              "id": "aea376fb-b1a4-4e18-950e-e8dc24e311bd",
+              "answers": [
+                {
+                  "text": "27%",
+                  "answer_start": 13
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the decrease in steel production in 1932 compared to 1928?",
+              "id": "cacc694b-8413-4512-9235-9c7b8dbd3b19",
+              "answers": [
+                {
+                  "text": "61%",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the overall decrease in industrial production?",
+              "id": "dd7f8ff6-7ccb-40c0-9de4-d2a2a95f1d0d",
+              "answers": [
+                {
+                  "text": "41%",
+                  "answer_start": 40
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main reason for the decrease in industrial production?",
+              "id": "1673cb85-7638-4a8b-b6cd-4e030809fc12",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the government respond to the decrease in industrial production?",
+              "id": "ea3d46c5-da17-4f63-b7bc-47c438b33db7",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression in the UK",
+      "paragraphs": [
+        {
+          "context": "The World Depression broke at a time when the United Kingdom had still not fully recovered from the effects of the First World War more than a decade earlier. The country was driven off the gold standard in 1931.",
+          "qas": [
+            {
+              "question": "When did the UK go off the gold standard?",
+              "id": "6a52c341-a3ef-4206-aef9-366f6dd88849",
+              "answers": [
+                {
+                  "text": "1931",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the state of the UK's recovery from WW1 in the 1930s?",
+              "id": "dd853bd7-052f-4d2f-98f9-8737d4a1e5c1",
+              "answers": [
+                {
+                  "text": "not fully recovered",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the global economic situation in the 1930s?",
+              "id": "e983d38b-e927-4e19-8337-c8f18d704ea5",
+              "answers": [
+                {
+                  "text": "World Depression",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "4ce2c1a0-0365-4ce1-af7b-83edb92ce967",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the Great Depression affect other countries?",
+              "id": "81866e59-8e8e-48fe-94b9-9b8f93861a53",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The effects on the northern industrial areas of Britain were immediate and devastating, as demand for traditional industrial products collapsed. By the end of 1930 unemployment had more than doubled from 1 million to 2.5 million (20% of the insured workforce), and exports had fallen in value by 50%. In 1933, 30% of Glaswegians were unemployed due to the severe decline in heavy industry.",
+          "qas": [
+            {
+              "question": "What happened to unemployment in the UK by the end of 1930?",
+              "id": "6d4b449b-5b1f-47d9-afbe-6115d5e2f2f2",
+              "answers": [
+                {
+                  "text": "more than doubled from 1 million to 2.5 million",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What percentage of the insured workforce was unemployed by the end of 1930?",
+              "id": "3d474a68-05f8-48de-8066-8b83cdad72dc",
+              "answers": [
+                {
+                  "text": "20%",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the unemployment rate in Glasgow in 1933?",
+              "id": "065db3cd-7eaa-467b-92fe-6a0117ea3ff9",
+              "answers": [
+                {
+                  "text": "30%",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main industry affected in Glasgow?",
+              "id": "b92893c4-9ee1-4af6-9303-158b77465625",
+              "plausible_answers": [
+                {
+                  "text": "shipbuilding",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What was the global response to the Great Depression?",
+              "id": "d2b21d59-0410-4e7b-a73a-31fb52715378",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Smoot-Hawley Tariff Act",
+      "paragraphs": [
+        {
+          "context": "The Smoot\u2013Hawley Tariff Act was passed in the United States on 17 June 1930, having been proposed the year prior. Ostensibly aimed at protecting the American economy as the Depression began to take root, it backfired enormously and may have even caused the Depression. The consensus view among economists and economic historians (including Keynesians, Monetarists and Austrian economists) is that the passage of the Smoot\u2013Hawley Tariff exacerbated the Great Depression,[25] although there is disagreement as to how much.",
+          "qas": [
+            {
+              "question": "When was the Smoot-Hawley Tariff Act passed?",
+              "id": "ac6b42a7-b06e-4fe2-b58e-b4ada8a32a93",
+              "answers": [
+                {
+                  "text": "17 June 1930",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the intended purpose of the Smoot-Hawley Tariff Act?",
+              "id": "ce43d709-52f5-4e7b-b3c3-295d00e4f435",
+              "answers": [
+                {
+                  "text": "protecting the American economy",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the consensus view among economists and economic historians regarding the Smoot-Hawley Tariff Act?",
+              "id": "9e031877-de1b-4f7b-b366-a0effe5681f2",
+              "answers": [
+                {
+                  "text": "it exacerbated the Great Depression",
+                  "answer_start": 44
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "57ed2de7-76ec-4fea-81fa-431c9c826dbc",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many economists agree that the Smoot-Hawley Tariff Act worsened the Great Depression?",
+              "id": "1a568a9d-a9ff-49ed-962a-8385e4b0a10b",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "Many economists have argued that the sharp decline in international trade after 1930 helped to worsen the depression, especially for countries significantly dependent on foreign trade. Most historians and economists blame the Act for worsening the depression by seriously reducing international trade and causing retaliatory tariffs in other countries. While foreign trade was a small part of overall economic activity in the U.S. and was concentrated in a few businesses like farming, it was a much larger factor in many other countries.",
+          "qas": [
+            {
+              "question": "What was the impact of the decline in international trade on the depression?",
+              "id": "603989e4-2de3-4d6b-9c1f-8b569bc7f9a1",
+              "answers": [
+                {
+                  "text": "it helped to worsen the depression",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why did the Act worsen the depression?",
+              "id": "51e6acf7-9799-4f79-8a0f-62e58b002c2d",
+              "answers": [
+                {
+                  "text": "by seriously reducing international trade and causing retaliatory tariffs in other countries",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the significance of foreign trade in the U.S. economy?",
+              "id": "db2b7858-1887-4ba8-bfc8-7a80223db25e",
+              "answers": [
+                {
+                  "text": "a small part of overall economic activity",
+                  "answer_start": 44
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the impact of the Smoot-Hawley Tariff Act on American exports?",
+              "id": "87651773-8eb0-4370-9f55-36e6ce97827f",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did countries that remained on the gold standard respond to the depression?",
+              "id": "0423f1f4-6d09-4868-83a1-3a45dccb979a",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression",
+      "paragraphs": [
+        {
+          "context": "In the aftermath of World War I, the Roaring Twenties had brought considerable wealth to the United States and Western Europe.[17] The year 1929 dawned with considerable economic progress in the American economy. A small stock crash occurred on 25 March 1929, but the crash was stabilized. Despite signs of economic trouble, the market continued to improve through September. Stock prices began to slump in September, and were volatile at the end of September.[18] A large sell-off of stocks began in mid-October.",
+          "qas": [
+            {
+              "question": "What was the economic situation in the United States in 1929?",
+              "id": "fe7db005-ae1a-4a27-8e6e-8cdc3dba2f7c",
+              "answers": [
+                {
+                  "text": "considerable economic progress",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "When did the small stock crash occur?",
+              "id": "a2626efc-3012-4301-ac63-3dacd8d8f772",
+              "answers": [
+                {
+                  "text": "25 March 1929",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What happened to stock prices in September?",
+              "id": "287e7dd9-6128-4651-8f1a-b95f63d47928",
+              "answers": [
+                {
+                  "text": "began to slump",
+                  "answer_start": 53
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "75be622b-67e2-4a80-9a03-b642ff4a6fee",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many people lost their jobs during the Great Depression?",
+              "id": "4d7250a7-2ffe-4234-ac63-3d255fa80bf1",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "Crowds outside the Bank of United States in New York after its failure in 1931 Despite the crash, the worst of the crisis did not reverberate around the world until after 1929. The crisis hit panic levels again in December 1930, with a bank run on the Bank of United States (privately run, no relation to the government). Unable to pay out to all of its creditors, the bank failed.[22][23] Among the 608 American banks that closed in November and December 1930, the Bank of United States accounted for a third of the total $550 million deposits lost and, with its closure, bank failures reached a critical mass.",
+          "qas": [
+            {
+              "question": "What happened to the Bank of United States in 1931?",
+              "id": "a5f198bb-9fc4-41db-91d1-636dd26b107d",
+              "answers": [
+                {
+                  "text": "failed",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How many American banks closed in November and December 1930?",
+              "id": "d95d22f7-e67f-44aa-97f2-90887e75eef0",
+              "answers": [
+                {
+                  "text": "608",
+                  "answer_start": 43
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the total amount of deposits lost due to the Bank of United States' failure?",
+              "id": "0bb83025-a340-4627-9826-756018507839",
+              "answers": [
+                {
+                  "text": "$550 million",
+                  "answer_start": 54
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who won best actor at the Academy Awards in 1998?",
+              "id": "545f0cb6-ce4b-4f49-a6f1-1f2349753cce",
+              "plausible_answers": [
+                {
+                  "text": "bank failures reached a critical mass",
+                  "answer_start": 64
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What was the global impact of the Bank of United States' failure?",
+              "id": "6d244fac-8e39-411e-9e24-481a3bfd8261",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression",
+      "paragraphs": [
+        {
+          "context": "Irving Fisher argued that the predominant factor leading to the Great Depression was a vicious circle of deflation and growing over-indebtedness. He outlined nine factors interacting with one another under conditions of debt and deflation to create the mechanics of boom to bust.",
+          "qas": [
+            {
+              "question": "What was the predominant factor leading to the Great Depression according to Irving Fisher?",
+              "id": "c19012eb-51d7-4042-8d30-3df1b28edc82",
+              "answers": [
+                {
+                  "text": "a vicious circle of deflation and growing over-indebtedness",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How many factors did Irving Fisher outline as interacting with one another under conditions of debt and deflation?",
+              "id": "5dd65197-156b-408e-9dbc-c5f618213456",
+              "answers": [
+                {
+                  "text": "nine",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the result of the interaction of these factors?",
+              "id": "34727b9b-7063-4fb9-b794-ed8b5ffd1c25",
+              "answers": [
+                {
+                  "text": "the mechanics of boom to bust",
+                  "answer_start": 35
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the stock market crash of 1929?",
+              "id": "71b8aac4-3e58-41aa-94b4-80a1fe167a5c",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many banks failed during the 1930s?",
+              "id": "9638c0a5-d640-43de-84c7-fbd37ac3d00b",
+              "plausible_answers": [
+                {
+                  "text": "9,000",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The liquidation of debt could not keep up with the fall of prices that it caused. The mass effect of the stampede to liquidate increased the value of each dollar owed, relative to the value of declining asset holdings. The very effort of individuals to lessen their burden of debt effectively increased it. Paradoxically, the more the debtors paid, the more they owed.",
+          "qas": [
+            {
+              "question": "What was the result of the liquidation of debt?",
+              "id": "718bc669-1009-405e-b483-8aee1f55e1c7",
+              "answers": [
+                {
+                  "text": "the fall of prices that it caused",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What happened to the value of each dollar owed?",
+              "id": "36b7281c-6480-44fa-8fc5-45cc9ff0e4e8",
+              "answers": [
+                {
+                  "text": "increased",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the paradoxical effect of debtors paying off their debt?",
+              "id": "1aa0f644-3956-4078-ada3-40fa5d33fd95",
+              "answers": [
+                {
+                  "text": "the more they owed",
+                  "answer_start": 35
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who developed an alternative way in which the financial crisis affected output?",
+              "id": "00efc579-8eff-4948-811f-5cc0bade8036",
+              "plausible_answers": [
+                {
+                  "text": "Ben Bernanke",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression",
+      "paragraphs": [
+        {
+          "context": "Hoover's first measures to combat the depression were based on encouraging businesses not to reduce their workforce or cut wages but businesses had little choice: wages were reduced, workers were laid off, and investments postponed. In June 1930, Congress approved the Smoot\u2013Hawley Tariff Act which raised tariffs on thousands of imported items.",
+          "qas": [
+            {
+              "question": "What was Hoover's initial approach to combating the depression?",
+              "id": "552089bf-971c-4e3f-92ae-f5e7acdcb9df",
+              "answers": [
+                {
+                  "text": "encouraging businesses not to reduce their workforce or cut wages",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the purpose of the Smoot-Hawley Tariff Act?",
+              "id": "db5865a7-af87-479d-ba5e-91cf6529f87e",
+              "answers": [
+                {
+                  "text": "to raise tariffs on thousands of imported items",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the impact of the Smoot-Hawley Tariff Act?",
+              "id": "0023f254-a494-457e-9ca3-26e45a2dbf18",
+              "answers": [
+                {
+                  "text": "most countries that traded with the U.S. increased tariffs on American-made goods",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the global response to the Smoot-Hawley Tariff Act?",
+              "id": "9d02698a-c18f-4c90-98aa-aa6765886c1f",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How did the Smoot-Hawley Tariff Act affect international trade?",
+              "id": "ff6d4fea-945d-4f5f-b14f-adeb0f447aab",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "By 1932, unemployment had reached 23.6%, peaking in early 1933 at 25%. Those releasing from prison during this period had an especially difficult time finding employment given the stigma of their criminal records, which often led to recidivism out of economic desperation.",
+          "qas": [
+            {
+              "question": "What was the unemployment rate in 1932?",
+              "id": "6069ccd0-11a4-41cf-aaec-f4214a2807c6",
+              "answers": [
+                {
+                  "text": "23.6%",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the peak unemployment rate in early 1933?",
+              "id": "f5b7bb68-11f1-4b9f-9c28-664b128c4283",
+              "answers": [
+                {
+                  "text": "25%",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why did those releasing from prison have a hard time finding employment?",
+              "id": "090d4d6a-6d5d-494d-b394-3a1a098a0a84",
+              "answers": [
+                {
+                  "text": "the stigma of their criminal records",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How did the economic situation affect those releasing from prison?",
+              "id": "a885fe1b-79d8-4f81-bf5e-f1eee83a508d",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Literature of the Great Depression",
+      "paragraphs": [
+        {
+          "context": "And the great owners, who must lose their land in an upheaval, the great owners with access to history, with eyes to read history and to know the great fact: when property accumulates in too few hands it is taken away. And that companion fact: when a majority of the people are hungry and cold they will take by force what they need. And the little screaming fact that sounds through all history: repression works only to strengthen and knit the repressed.",
+          "qas": [
+            {
+              "question": "What happens when property accumulates in too few hands?",
+              "id": "df54862d-285b-44a7-8996-2606cc75e01d",
+              "answers": [
+                {
+                  "text": "it is taken away",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What do people do when they are hungry and cold?",
+              "id": "fbac0d7a-58b1-41e8-87dd-49483d8c919c",
+              "answers": [
+                {
+                  "text": "they will take by force what they need",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the effect of repression?",
+              "id": "7f043bd1-e04b-4e6d-a266-201f66e0d322",
+              "answers": [
+                {
+                  "text": "it strengthens and knits the repressed",
+                  "answer_start": 46
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who wrote the quote?",
+              "id": "1613f7dc-0404-4c56-b646-45cca7478853",
+              "plausible_answers": [
+                {
+                  "text": "John Steinbeck",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What is the title of the novel that the quote is from?",
+              "id": "fd306366-c5c4-4516-974b-22f0f73e0a89",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The Great Depression has been the subject of much writing, as authors have sought to evaluate an era that caused both financial and emotional trauma. Perhaps the most noteworthy and famous novel written on the subject is The Grapes of Wrath, published in 1939 and written by John Steinbeck, who was awarded the Pulitzer Prize for the work, and in 1962 was awarded the Nobel Prize for literature.",
+          "qas": [
+            {
+              "question": "What is the most famous novel written about the Great Depression?",
+              "id": "af0649d0-5c29-46c7-b13b-a4042fa62eb2",
+              "answers": [
+                {
+                  "text": "The Grapes of Wrath",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who wrote The Grapes of Wrath?",
+              "id": "1adeb518-b663-40c9-ba76-e633ec205275",
+              "answers": [
+                {
+                  "text": "John Steinbeck",
+                  "answer_start": 44
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What awards did John Steinbeck win for The Grapes of Wrath?",
+              "id": "51eb9447-af95-48df-a71e-2ba4d5d752a2",
+              "answers": [
+                {
+                  "text": "the Pulitzer Prize and the Nobel Prize for literature",
+                  "answer_start": 50
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the title of the novella written by John Steinbeck?",
+              "id": "de459c9d-02bf-494b-9ee2-f29fc2d14b51",
+              "plausible_answers": [
+                {
+                  "text": "Of Mice and Men",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What is the name of the series of books written by Valerie Tripp?",
+              "id": "cbae6ed1-4698-4a19-a12b-bb563c1864a7",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression",
+      "paragraphs": [
+        {
+          "context": "The monetarist explanation was given by American economists Milton Friedman and Anna J. Schwartz. They argued that the Great Depression was caused by the banking crisis that caused one-third of all banks to vanish, a reduction of bank shareholder wealth and more importantly monetary contraction of 35%, which they called \"The Great Contraction\".",
+          "qas": [
+            {
+              "question": "Who gave the monetarist explanation for the Great Depression?",
+              "id": "80b709c7-1789-4884-b8a9-2efd28260a4e",
+              "answers": [
+                {
+                  "text": "Milton Friedman and Anna J. Schwartz",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the percentage of monetary contraction during the Great Depression?",
+              "id": "a706157c-5a3d-412c-960d-bd5e0cadf522",
+              "answers": [
+                {
+                  "text": "35%",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the term used by Friedman and Schwartz to describe the monetary contraction?",
+              "id": "95460748-f3b9-46ec-a68e-b73925968920",
+              "answers": [
+                {
+                  "text": "\"The Great Contraction\"",
+                  "answer_start": 27
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the main cause of the Great Depression according to Keynes?",
+              "id": "63180173-7240-4562-88d0-53c3f3b351fb",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What was the name of the Federal Reserve Governor who endorsed Friedman and Schwartz's view?",
+              "id": "452c8dda-bcb3-4f6e-bae7-5baf2da04d0e",
+              "plausible_answers": [
+                {
+                  "text": "Ben Bernanke",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            }
+          ]
+        },
+        {
+          "context": "Keynes's basic idea was simple: to keep people fully employed, governments have to run deficits when the economy is slowing, as the private sector would not invest enough to keep production at the normal level and bring the economy out of recession.",
+          "qas": [
+            {
+              "question": "What was Keynes's basic idea to keep people fully employed?",
+              "id": "3d852a09-4584-4333-b487-9201d79cedec",
+              "answers": [
+                {
+                  "text": "to run deficits when the economy is slowing",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why do governments need to run deficits according to Keynes?",
+              "id": "fdb23cb8-8852-4c9d-addb-3b94b625a56a",
+              "answers": [
+                {
+                  "text": "because the private sector would not invest enough",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the goal of Keynes's idea?",
+              "id": "fb96ee13-036b-4475-80ff-a36874350a99",
+              "answers": [
+                {
+                  "text": "to keep people fully employed",
+                  "answer_start": 7
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the name of the book in which Keynes presented his ideas?",
+              "id": "b9e7944f-d1f6-40ce-898f-52c8d13a3ac1",
+              "plausible_answers": [
+                {
+                  "text": "The General Theory of Employment, Interest and Money",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the event that finally brought the economy out of recession?",
+              "id": "c7f5e5d6-cf46-4816-8061-129bd82935fd",
+              "plausible_answers": [
+                {
+                  "text": "the start of World War II",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Pyramid of Giza",
+      "paragraphs": [
+        {
+          "context": "The Great Pyramid is surrounded by a complex of several buildings, including small pyramids. Temples and causeway Remains of the basalt floor of the temple at the east foot of the pyramid The Pyramid Temple, which stood on the east side of the pyramid and measured 52.2 metres (171 ft) north to south and 40 metres (130 ft) east to west, has almost entirely disappeared.",
+          "qas": [
+            {
+              "question": "What is the Pyramid Temple?",
+              "id": "61006151-5234-48cb-8a62-e8c822f04017",
+              "answers": [
+                {
+                  "text": "a temple that stood on the east side of the pyramid",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the size of the Pyramid Temple?",
+              "id": "3daa8cf6-b2ed-43ba-b8de-1638c64fbaab",
+              "answers": [
+                {
+                  "text": "52.2 metres (171 ft) north to south and 40 metres (130 ft) east to west",
+                  "answer_start": 35
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What remains of the Pyramid Temple?",
+              "id": "29cb0bc7-854b-45ae-9b3b-f6cb7f81829c",
+              "answers": [
+                {
+                  "text": "only some of the black basalt paving",
+                  "answer_start": 20
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the purpose of the Pyramid Temple?",
+              "id": "e68f7bde-11f2-4574-b733-e07cf805e473",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "Who built the Pyramid Temple?",
+              "id": "72b4b026-1662-4c8e-928c-2ad6db802167",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The tomb of Queen Hetepheres I, sister-wife of Sneferu and mother of Khufu, is located approximately 110 metres (360 ft) east of the Great Pyramid. Discovered by accident by the Reisner expedition, the burial was intact, although the carefully sealed coffin proved to be empty.",
+          "qas": [
+            {
+              "question": "Whose tomb is located east of the Great Pyramid?",
+              "id": "ab3bdcd3-a23a-4205-9ca5-7169805e00a0",
+              "answers": [
+                {
+                  "text": "Queen Hetepheres I",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the relationship between Queen Hetepheres I and Khufu?",
+              "id": "64a6845a-1d32-4456-b616-0521c45f8c7c",
+              "answers": [
+                {
+                  "text": "sister-wife of Sneferu and mother of Khufu",
+                  "answer_start": 10
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was found in the tomb of Queen Hetepheres I?",
+              "id": "0897ffa2-ba01-4a6a-a9b0-24592b70e5d5",
+              "answers": [
+                {
+                  "text": "an empty coffin",
+                  "answer_start": 25
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the significance of the tomb of Queen Hetepheres I?",
+              "id": "530ae7fe-b0ed-4bdb-9227-7dec46869fc8",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "Who discovered the tomb of Queen Hetepheres I?",
+              "id": "8566134d-a990-43da-b15b-688e4dfd18f1",
+              "plausible_answers": [
+                {
+                  "text": "the Reisner expedition",
+                  "answer_start": 20
+                }
+              ],
+              "is_impossible": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Depression and Economic Expectations",
+      "paragraphs": [
+        {
+          "context": "According to Peter Temin, Barry Wigmore, Gauti B. Eggertsson and Christina Romer, the key to recovery and to ending the Great Depression was brought about by a successful management of public expectations. The thesis is based on the observation that after years of deflation and a very severe recession important economic indicators turned positive in March 1933 when Franklin D. Roosevelt took office. Consumer prices turned from deflation to a mild inflation, industrial production bottomed out in March 1933, and investment doubled in 1933 with a turnaround in March 1933.",
+          "qas": [
+            {
+              "question": "What was the key to recovery and ending the Great Depression?",
+              "id": "ca565a32-d107-4367-b96c-10a0dbec18dd",
+              "answers": [
+                {
+                  "text": "a successful management of public expectations",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "When did important economic indicators turn positive?",
+              "id": "3917ae03-8e21-4fb7-9ffc-c4d4ab7dc4ea",
+              "answers": [
+                {
+                  "text": "March 1933",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What happened to consumer prices in March 1933?",
+              "id": "63c11e5c-1a8c-48e5-974f-aad2959ce9d5",
+              "answers": [
+                {
+                  "text": "turned from deflation to a mild inflation",
+                  "answer_start": 44
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the impact of the Great Depression on the global economy?",
+              "id": "0404ebd2-0891-469a-8771-035f1b4652ad",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What was the main cause of the Great Depression?",
+              "id": "61aaae00-85f4-4ac7-a96b-1063a417e515",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The recession of 1937\u20131938, which slowed down economic recovery from the Great Depression, is explained by fears of the population that the moderate tightening of the monetary and fiscal policy in 1937 were first steps to a restoration of the pre-1933 policy regime.",
+          "qas": [
+            {
+              "question": "What caused the recession of 1937-1938?",
+              "id": "3d3c0032-3e57-4623-95e7-5203ee8754bb",
+              "answers": [
+                {
+                  "text": "fears of the population that the moderate tightening of the monetary and fiscal policy in 1937 were first steps to a restoration of the pre-1933 policy regime",
+                  "answer_start": 0
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the impact of the recession of 1937-1938 on economic recovery?",
+              "id": "46562cfc-cf9e-4fb8-8964-3b2a91bb2bcd",
+              "answers": [
+                {
+                  "text": "slowed down economic recovery from the Great Depression",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the policy regime before 1933?",
+              "id": "bd90112b-f623-49de-9af6-0ce0ad0d9e95",
+              "answers": [
+                {
+                  "text": "pre-1933 policy regime",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What was the impact of the Great Depression on global trade?",
+              "id": "1da43ba1-9964-4421-ba41-22ae882ad3ee",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What was the role of the Federal Reserve during the Great Depression?",
+              "id": "610d4f64-6046-4ac6-bb41-0dac06f8818b",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The King's Chamber",
+      "paragraphs": [
+        {
+          "context": "The King's Chamber is the upmost of the three main chambers of the pyramid. It is faced entirely with granite and measures 20 cubits (10.5 m; 34.4 ft) east-west by 10 cubits (5.2 m; 17.2 ft) north-south. Its flat ceiling is about 11 cubits and 5 digits (5.8 m;19.0 ft) above the floor, formed by nine slabs of stone weighing in total about 400 tons. All the roof beams show cracks due to the chamber having settled 2.5\u20135 cm (0.98\u20131.97 in).",
+          "qas": [
+            {
+              "question": "What is the size of the King's Chamber?",
+              "id": "096eaac2-a45f-4806-bf23-85f117642093",
+              "answers": [
+                {
+                  "text": "20 cubits (10.5 m; 34.4 ft) east-west by 10 cubits (5.2 m; 17.2 ft) north-south",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the material used to face the King's Chamber?",
+              "id": "405c9b2b-aa6e-4e2e-bda8-3a40874bf19a",
+              "answers": [
+                {
+                  "text": "granite",
+                  "answer_start": 7
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "How many slabs of stone form the ceiling of the King's Chamber?",
+              "id": "9e3abd3a-7c45-4130-8551-281e5907836f",
+              "answers": [
+                {
+                  "text": "nine",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the purpose of the King's Chamber?",
+              "id": "eec8e3ce-c3c0-4dd0-a11c-646d6f01a4fc",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many chambers are above the King's Chamber?",
+              "id": "76d4156e-f35d-4671-a3ab-5fe78eb745bb",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The walls consist of five courses of blocks that are uninscribed, as was the norm for burial chambers of the 4th dynasty. The stones are precisely fitted together. The facing surfaces are dressed to varying degrees, with some displaying remains of lifting bosses not entirely cut away.",
+          "qas": [
+            {
+              "question": "How many courses of blocks make up the walls of the King's Chamber?",
+              "id": "5232a80e-c28f-45f3-be6a-691463a003a2",
+              "answers": [
+                {
+                  "text": "five",
+                  "answer_start": 7
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Why are the stones of the King's Chamber precisely fitted together?",
+              "id": "53667f92-401d-4578-b304-49001a88c23c",
+              "answers": [
+                {
+                  "text": "as was the norm for burial chambers of the 4th dynasty",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the purpose of the lifting bosses on the stones?",
+              "id": "7e98d636-7504-42dd-af9a-d0c3fbbbcdaf",
+              "answers": [
+                {
+                  "text": "not entirely cut away",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the significance of the 4th dynasty in the construction of the King's Chamber?",
+              "id": "45862b85-d2cd-4e79-bab5-240d354efdff",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How were the stones of the King's Chamber cut and shaped?",
+              "id": "75b62e64-9ecf-4df3-b9f6-44b15617f73a",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "The Great Pyramid of Giza",
+      "paragraphs": [
+        {
+          "context": "The Horizontal Passage links the Grand Gallery to the Queen's Chamber. Five pairs of holes at the start suggest the tunnel was once concealed with slabs that laid flush with the gallery floor. The passage is 2 cubits (1.0 m; 3.4 ft) wide and 1.17 m (3.8 ft) high for most of its length, but near the chamber there is a step in the floor, after which the passage increases to 1.68 m (5.5 ft) high.",
+          "qas": [
+            {
+              "question": "What is the width of the Horizontal Passage?",
+              "id": "c5efa60b-6e6b-4676-9307-533bf6f3f8c3",
+              "answers": [
+                {
+                  "text": "2 cubits",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the height of the passage near the chamber?",
+              "id": "78608391-de4c-4ec2-9af6-a120de9d6619",
+              "answers": [
+                {
+                  "text": "1.68 m",
+                  "answer_start": 39
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the purpose of the Horizontal Passage?",
+              "id": "94272e8a-e448-429c-a850-5bf77b071bee",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many pairs of holes are at the start of the passage?",
+              "id": "de3e28a4-81fa-4a5b-a61c-1c44639ce9e5",
+              "answers": [
+                {
+                  "text": "five",
+                  "answer_start": 11
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the material of the slabs that concealed the tunnel?",
+              "id": "46f84aa5-9c31-48a8-ae82-e929fd99de4d",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "The Grand Gallery continues the slope of the Ascending Passage towards the King's Chamber, extending from the 23rd to the 48th course (of stones), a rise of 21 metres (69 ft). It has been praised as a \"truly spectacular example of stonemasonry\".",
+          "qas": [
+            {
+              "question": "What is the rise of the Grand Gallery?",
+              "id": "76a14df4-3193-4668-a915-fb468b5f0823",
+              "answers": [
+                {
+                  "text": "21 metres",
+                  "answer_start": 24
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the material of the walls of the Grand Gallery?",
+              "id": "e3e55bf1-f201-4c4f-84d9-d54665686608",
+              "answers": [
+                {
+                  "text": "polished limestone",
+                  "answer_start": 34
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the purpose of the Grand Gallery?",
+              "id": "6cf716e0-79f0-49ab-9a97-749dfa24b3fb",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "How many courses of stones does the Grand Gallery extend?",
+              "id": "d00700fe-d387-4454-aa3b-9019b0615d7e",
+              "answers": [
+                {
+                  "text": "from the 23rd to the 48th",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who praised the Grand Gallery as a spectacular example of stonemasonry?",
+              "id": "c7f39909-4a3b-45d0-9b52-c4e4a86c0261",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Theories on the Great Depression",
+      "paragraphs": [
+        {
+          "context": "Austrian School Two prominent theorists in the Austrian School on the Great Depression include Austrian economist Friedrich Hayek and American economist Murray Rothbard, who wrote America's Great Depression (1963). In their view, much like the monetarists, the Federal Reserve (created in 1913) shoulders much of the blame; however, unlike the Monetarists, they argue that the key cause of the Depression was the expansion of the money supply in the 1920s which led to an unsustainable credit-driven boom.",
+          "qas": [
+            {
+              "question": "Who are the two prominent theorists in the Austrian School on the Great Depression?",
+              "id": "ecbaac94-7a80-4364-8475-bda0003170c9",
+              "answers": [
+                {
+                  "text": "Friedrich Hayek and Murray Rothbard",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the key cause of the Depression according to the Austrian School?",
+              "id": "85a61cba-dfa4-46c0-ac5c-07150be22ee2",
+              "answers": [
+                {
+                  "text": "the expansion of the money supply in the 1920s",
+                  "answer_start": 44
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "When was the Federal Reserve created?",
+              "id": "61c12e66-929e-4589-a28b-1a927b835f6e",
+              "answers": [
+                {
+                  "text": "1913",
+                  "answer_start": 27
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the name of the book written by Murray Rothbard?",
+              "id": "2a072af6-c66e-49cb-b91b-2fbf1c14db13",
+              "plausible_answers": [],
+              "is_impossible": false,
+              "answers": [
+                {
+                  "text": "America's Great Depression (1963)",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "question": "What is the main difference between the Austrian School and the Monetarists?",
+              "id": "9a452541-d034-434f-88ce-d1261df25150",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        },
+        {
+          "context": "Marxist Marxists generally argue that the Great Depression was the result of the inherent instability of the capitalist mode of production. According to Forbes, \"The idea that capitalism caused the Great Depression was widely held among intellectuals and the general public for many decades.\"",
+          "qas": [
+            {
+              "question": "What is the Marxist view on the Great Depression?",
+              "id": "06d6fb23-7317-41b9-bb79-17a3ef96b7a2",
+              "answers": [
+                {
+                  "text": "the result of the inherent instability of the capitalist mode of production",
+                  "answer_start": 14
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "Who is the author of the quote about the idea that capitalism caused the Great Depression?",
+              "id": "dadd8aeb-0b68-4bbd-a131-031db282c5c4",
+              "answers": [
+                {
+                  "text": "Forbes",
+                  "answer_start": 29
+                }
+              ],
+              "is_impossible": false
+            },
+            {
+              "question": "What is the inherent instability of the capitalist mode of production?",
+              "id": "895aff30-a8f2-4a44-af21-2b8f9dc18630",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What is the name of the Marxist economist who wrote about the Great Depression?",
+              "id": "fe73df8f-132a-40cd-bea9-641954d774e0",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            },
+            {
+              "question": "What is the alternative economic system proposed by Marxists?",
+              "id": "f78f9c27-5ab7-4f74-9429-b0525ea61b93",
+              "plausible_answers": [],
+              "is_impossible": true,
+              "answers": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
