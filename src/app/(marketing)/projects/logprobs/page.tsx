@@ -14,11 +14,11 @@ export default function Home() {
   return (
     <main>
       <div className="relative mx-4 mt-2">
-        <Tabs defaultValue="chatbot" className="">
+        <Tabs defaultValue="intro" className="">
           <TabsList>
             <TabsTrigger value="intro">Intro</TabsTrigger>
             <TabsTrigger value="dataset">Dataset</TabsTrigger>
-            <TabsTrigger value="guardrails">Guardrails</TabsTrigger>
+            <TabsTrigger value="guardrails">Demonstration</TabsTrigger>
           </TabsList>
           <TabsContent value="intro">
             <Demonstration />

@@ -28,14 +28,14 @@ export default function BlogIndex() {
   });
 
   return (
-    <div className="max-w-6xl mx-8">
+    <div className="max-w-6xl mx-8 mb-10">
       <div className="my-10 max-w-sm ">
         <h1 className="leading-tight lg::leading-snug font-black text-5xl ">
           The Blog.
         </h1>
         <p className="mt-3 leading-8 text-xl text-muted-foreground">
-          We have stories to tell you—about the features we build, makers, and
-          our company.
+          Progress on projects and ramblings about the things I&apos;m working
+          on.
         </p>
       </div>
       <Separator />

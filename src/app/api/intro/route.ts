@@ -7,15 +7,14 @@ const openai = new OpenAI({
 
 export async function POST(req: Request): Promise<Response> {
   try {
-    const { message, model } = await req.json();
-
-    console.log(message);
+    const { message, model, temperature } = await req.json();
 
     const answerResponse = await openai.chat.completions.create({
       model: model,
       messages: [message],
       logprobs: true,
       top_logprobs: 4,
+      temperature: temperature,
     });
 
     return new Response(JSON.stringify(answerResponse), {

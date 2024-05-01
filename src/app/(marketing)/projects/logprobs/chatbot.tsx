@@ -747,9 +747,7 @@ export function Chatbot() {
                 <div className="flex justify-start">
                   <Avatar className="mr-4">
                     <AvatarImage src="" alt="AI" />
-                    <AvatarFallback className="bg-primary/45">
-                      AI
-                    </AvatarFallback>
+                    <AvatarFallback className="">AI</AvatarFallback>
                   </Avatar>
                   <div className="bg-primary text-primary-foreground rounded-lg p-3">
                     Hi, how can I help?
@@ -766,9 +764,7 @@ export function Chatbot() {
                         {m.role !== "user" && (
                           <Avatar className="mr-4">
                             <AvatarImage src="" alt="AI" />
-                            <AvatarFallback className="bg-primary/45">
-                              AI
-                            </AvatarFallback>
+                            <AvatarFallback className="">AI</AvatarFallback>
                           </Avatar>
                         )}
                         <div className="flex flex-col space-y-2">
@@ -976,14 +972,14 @@ export function Chatbot() {
                     type="stepAfter"
                     dataKey="relevant"
                     strokeWidth={2}
-                    activeDot={{ r: 8, style: { fill: "#6325c5" } }}
-                    stroke="#6325c5"
+                    activeDot={{ r: 8, style: { fill: "gray" } }}
+                    stroke="gray"
                     dot={
                       <CustomizedDot
                         r={3}
-                        fill="#6325c5"
+                        fill="gray"
                         fillOpacity={1}
-                        stroke="#6325c5"
+                        stroke="gray"
                         strokeWidth={1}
                       />
                     }
@@ -1073,15 +1069,15 @@ export function Chatbot() {
                     strokeWidth={2}
                     activeDot={{
                       r: 8,
-                      style: { fill: "#6325c5" },
+                      style: { fill: "gray" },
                     }}
-                    stroke="#6325c5"
+                    stroke="gray"
                     dot={
                       <CustomizedDot
                         r={3}
-                        fill="#6325c5"
+                        fill="gray"
                         fillOpacity={1}
-                        stroke="#6325c5"
+                        stroke="gray"
                         strokeWidth={1}
                       />
                     }
@@ -1171,15 +1167,15 @@ export function Chatbot() {
                     strokeWidth={2}
                     activeDot={{
                       r: 8,
-                      style: { fill: "#6325c5" },
+                      style: { fill: "gray" },
                     }}
-                    stroke="#6325c5"
+                    stroke="gray"
                     dot={
                       <CustomizedDot
                         r={3}
-                        fill="#6325c5"
+                        fill="gray"
                         fillOpacity={1}
-                        stroke="#6325c5"
+                        stroke="gray"
                         strokeWidth={1}
                       />
                     }

@@ -42,7 +42,7 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
       <Link href="/" className="flex items-center mr-6">
         <span className="font-bold text-2xl">JoeTaylor.me</span>
       </Link>
-      <div className="flex items-center gap-3">
+      <div className="flex flex-row items-center gap-3">
         <Button variant="ghost" className="hidden md:block text-md">
           <Link href="/blog">Blog</Link>
         </Button>
