@@ -15,7 +15,7 @@ import { Separator } from "@/components/ui/separator";
 export default function Page() {
   return (
     <div className="max-w-6xl mx-8 mb-10">
-      <div className="my-10 max-w-sm ">
+      <div className="my-10">
         <h1 className="leading-tight lg::leading-snug font-black text-5xl ">
           Some Projects.
         </h1>

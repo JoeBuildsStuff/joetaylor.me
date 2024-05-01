@@ -29,7 +29,7 @@ export default function BlogIndex() {
 
   return (
     <div className="max-w-6xl mx-8 mb-10">
-      <div className="my-10 max-w-sm ">
+      <div className="my-10 ">
         <h1 className="leading-tight lg::leading-snug font-black text-5xl ">
           The Blog.
         </h1>
@@ -40,7 +40,7 @@ export default function BlogIndex() {
       </div>
       <Separator />
       <ul className="pt-6">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-24">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8">
           {posts.map((post) => (
             <article
               key={post.slug}
@@ -62,12 +62,17 @@ export default function BlogIndex() {
                 <p className="leading-7 text-lg">{post.frontMatter.summary}</p>
                 <p className="text-semibold">{post.frontMatter.author}</p>
               </div>
-
-              <Button asChild variant="outline" className="mt-4">
-                <Link href={`/blog/posts/${post.slug}`}>
-                  Read more <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <div className="flex flex-row items-center justify-end">
+                <Button
+                  asChild
+                  variant="outline"
+                  className="mt-4 place-items-end"
+                >
+                  <Link href={`/blog/posts/${post.slug}`}>
+                    Read more <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
             </article>
           ))}
         </div>
