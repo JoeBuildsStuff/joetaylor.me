@@ -9,6 +9,8 @@ export default authMiddleware({
     "/blog",
     "/projects",
     "/projects/logprobs",
+    "/api/intro",
+    "/api/chat",
   ],
   // Routes that can always be accessed, and have
   // no authentication information
