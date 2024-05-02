@@ -8,7 +8,6 @@ import heroImageLight from "../../public/hero-light.png";
 //import custom stuff
 import { Hero } from "@/components/pages/landing/hero";
 import { Partners } from "@/components/pages/landing/partners";
-import { Plans } from "@/components/pages/landing/plans";
 
 export default function Home() {
   return (
@@ -28,8 +27,7 @@ export default function Home() {
           className="rounded-xl dark:block hidden"
         />
       </div> */}
-      {/* <Partners />
-      <Plans /> */}
+      {/* <Partners />*/}
     </div>
   );
 }
