@@ -11,7 +11,7 @@
     "stripe:trigger": "stripe trigger payment_intent.succeeded"
   },
   "dependencies": {
-    "@clerk/nextjs": "^4.29.9",
+    "@clerk/nextjs": "^5.0.5",
     "@faker-js/faker": "^8.4.1",
     "@mdx-js/loader": "^3.0.1",
     "@mdx-js/react": "^3.0.1",
@@ -51,8 +51,8 @@
     "next-themes": "^0.2.1",
     "openai": "^4.39.1",
     "path": "^0.12.7",
-    "react": "^18",
-    "react-dom": "^18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-markdown": "^9.0.1",
     "recharts": "^2.12.6",
     "stripe": "^14.19.0",

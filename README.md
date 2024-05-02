@@ -82,15 +82,15 @@ Visit `http://localhost:3000` to see your application.
 3. Copy `.env.local.sample` to a new file named `.env.local` and fill in your Clerk keys:
 
    ```plaintext
-   NEXT_PUBLIC_CLERK_FRONTEND_API=your_clerk_frontend_api_key
-   CLERK_API_KEY=your_clerk_secret_key
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
    ```
 
 4. navigate to JWT templates and create a new template and select convex as the provider
 5. copy the jwt issuer token and add to env.local file
 
    ```plaintext
-   CLERK_JWT_ISSUER_DOMAIN=your_clerk_jwt_issuer_domain
+   CLERK_JWT_ISSUER_DOMAIN=
    ```
 
 ### Step 9: Set Up Stripe
