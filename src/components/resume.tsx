@@ -13,8 +13,9 @@ import { Typography } from "../lib/typography";
 import resumeData from "../data/resume.json";
 
 import headshot from "../../public/headshot.png";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Globe, Linkedin, Mail, Phone } from "lucide-react";
 import { Separator } from "./ui/separator";
+import { Badge } from "./ui/badge";
 import Link from "next/link";
 
 interface Contact {
@@ -23,6 +24,7 @@ interface Contact {
   phone: string;
   email: string;
   linkedin: string;
+  website: string;
 }
 
 interface Education {
@@ -46,6 +48,7 @@ interface Experience {
   title: string;
   company: string;
   duration: string;
+  tags: string[];
   responsibilities: string[];
 }
 
@@ -73,7 +76,7 @@ const ResumePage = () => {
   } = resumeData;
 
   return (
-    <div className="resume-container mr-4 flex-col">
+    <div id="resumePageContainer" className="resume-container mr-4 flex-col">
       <div className="flex flex-row h-[12rem] space-x-4 items-center justify-start">
         <Image
           src={headshot}
@@ -89,7 +92,7 @@ const ResumePage = () => {
           </Typography.h4>
         </div>
       </div>
-
+      <Separator className="mt-0 mb-4" />
       <div className="flex flex-col ">
         <div className="flex flex-col space-y-6 w-full bg-muted rounded-lg p-6 md:flex-row md:space-y-0 md:justify-between lg:hidden">
           <SignedIn>
@@ -112,20 +115,26 @@ const ResumePage = () => {
           </SignedIn>
           <p className="text-base m-0 items-center flex">
             <div className="bg-primary rounded-sm p-1 mr-4">
+              <Globe className="w-4 h-4 text-background " strokeWidth={1.5} />
+            </div>
+            <Link href={`https://${contact.website}`} className="underline">
+              {contact.website}
+            </Link>
+          </p>
+          <p className="text-base m-0 items-center flex">
+            <div className="bg-primary rounded-sm p-1 mr-4">
               <Linkedin
                 className="w-4 h-4 text-background fill-primary-foreground"
-                // fill="#ffffff"
                 strokeWidth={1}
               />
             </div>
             <Link href={`https://${contact.linkedin}`} className="underline">
-              Linkedin.com/in/josephataylor
+              {contact.linkedin}
             </Link>
           </p>
         </div>
-
         <div className="flex flex-col lg:flex-row">
-          <div className="hidden lg:block w-[22rem] h-full  mt-8">
+          <div className="hidden lg:block w-[22rem] h-full">
             <div className="bg-muted rounded-lg">
               <div className="flex flex-col space-y-6 w-full bg-muted rounded-lg p-4  ">
                 <h3 className="text-2xl font-bold tracking-widest">CONTACT</h3>
@@ -147,6 +156,20 @@ const ResumePage = () => {
                     <span className="">{contact.email}</span>
                   </p>
                 </SignedIn>
+                <p className="text-base m-0 items-center flex">
+                  <div className="bg-primary rounded-sm p-1 mr-4">
+                    <Globe
+                      className="w-4 h-4 text-background "
+                      strokeWidth={1.5}
+                    />
+                  </div>
+                  <Link
+                    href={`https://${contact.website}`}
+                    className="underline"
+                  >
+                    {contact.website}
+                  </Link>
+                </p>
                 <p className="text-base m-0 items-center flex">
                   <div className="bg-primary rounded-sm p-1 mr-4">
                     <Linkedin
@@ -230,7 +253,7 @@ const ResumePage = () => {
               </div>
             </section>
           </div>
-          <div className="w-full lg:w-2/3 lg:pl-8 lg:mt-8">
+          <div className="w-full lg:w-2/3 lg:pl-8 ">
             <section className=" rounded-lg p-2 mt-2">
               <h3 className="text-2xl font-bold tracking-widest">
                 EXECUTIVE SUMMARY
@@ -248,14 +271,26 @@ const ResumePage = () => {
                 </div>
                 <div>
                   {experience.map((exp: Experience, index: number) => (
-                    <div key={index} className="spaace-y-0">
+                    <div key={index} className="space-y-0">
                       <div className="relative mt-8">
+                        <div className="mt-2 space-x-3">
+                          {exp.tags.map((tag: string, tagIndex: number) => (
+                            <Badge
+                              //   variant="secondary"
+                              key={tagIndex}
+                              className="py-[5px] px-[12px]"
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
                         <Typography.h4 className="text-lg mt-4 tracking-wide">
                           <div className="absolute rounded-full w-5 h-5 bg-background border-2 border-input top-[.3rem] -left-[2.2rem]"></div>
                           {/* <div className="absolute rounded-full w-3 h-3 bg-background top-[.52rem] -left-[1.9rem]"></div> */}
                           {exp.title}
                         </Typography.h4>
-                        <div className="flex flex-row space-x-4 items-center justify-between mt-4 ">
+
+                        <div className="flex flex-row space-x-4 items-center justify-between mt-2 ">
                           <p className="leading-relaxed text-lg">
                             {exp.company}
                           </p>
@@ -264,6 +299,7 @@ const ResumePage = () => {
                             {exp.duration}
                           </p>
                         </div>
+
                         <Typography.ul className="mt-4">
                           {exp.responsibilities.map(
                             (resp: string, index: number) => (

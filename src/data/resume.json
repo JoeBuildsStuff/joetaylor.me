@@ -4,7 +4,8 @@
     "title": "STRATEGIC CHANGE LEADER",
     "phone": "---.----.4505",
     "email": "---.----.taylor@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/joesephataylor/"
+    "linkedin": "www.linkedin.com/in/joesephataylor/",
+    "website": "www.joetaylor.me"
   },
   "education": [
     {
@@ -82,6 +83,7 @@
       "title": "INTEGRATION LEAD - OPERATIONAL RISK",
       "company": "JPMorgan Chase & Co.",
       "duration": "2023 — 2024",
+      "tags": ["Operational Risk", "LOB Liason"],
       "responsibilities": [
         "Lead Delegate for the integration of Heritage First Republic with JPMorgan Consumer and Community Banking for Risk and Control Observations",
         "Ensured disposition of the 100+ control and process risks as identified in Archer and CORE for operational risks expected to be resolved prior to integration",
@@ -93,6 +95,7 @@
       "title": "STRATEGIC PRIORITIES - DIRECTOR, DIGITAL OPERATIONAL RISK",
       "company": "First Republic Bank",
       "duration": "2022 — 2023",
+      "tags": ["Risk & Controls", "Transformation", "Onboarding"],
       "responsibilities": [
         "Reconciled risk and control operations by utilizing electronic digital documentation tools such as DocuSign, CLM tools including SpringCRM, archive tools such as OnBase, and AI tools including Instabase and Ephesoft",
         "Rationalized and integrated the fragmented ecosystem that was installed as one-off tools for one-off projects",
@@ -104,6 +107,7 @@
       "title": "CONSULTING – DIRECTOR, FINANCIAL SERVICES CLIENT ADVISORY",
       "company": "Evisort, Inc.",
       "duration": "2021 — 2022",
+      "tags": ["Consulting", "Start-up", "Client Advocate"],
       "responsibilities": [
         "Led the vision and strategy for the Global Financial Services Industry, establishing targets and driving overall growth",
         "Advised senior business leaders on leveraging AI and data analytics for business and technology transformations",
@@ -115,6 +119,7 @@
       "title": "PROGRAM MANAGEMENT – DIRECTOR, ENTERPRISE DIGITIZATION",
       "company": "Wells Fargo Bank, N.A.",
       "duration": "2019 — 2021",
+      "tags": ["Program Mgmt", "AI", "Enterprise Transformation"],
       "responsibilities": [
         "Deployed AI capabilities through agile methodology to support LIBOR Transition Office and Enterprise Contract Management",
         "Led digitization ecosystem of 200+ team members, leveraging OCR, RPA, ML, NLP and AI to centralize processes",
@@ -126,6 +131,7 @@
       "title": "PRODUCT OWNER – DIRECTOR, CORPORATE BANKING OPERATIONS",
       "company": "Wells Fargo Bank, N.A.",
       "duration": "2012 — 2019",
+      "tags": ["Product", "Onboarding", "LOB Delegate"],
       "responsibilities": [
         "Managed team of 25 and served as liaison across Credit, Onboarding, Sales, Legal and Technology departments",
         "Owned documentation solutions such as DocuSign, Documentum, Salesforce, and Seal Software (now DocuSign Insight)",
@@ -137,6 +143,7 @@
       "title": "SALES - VICE PRESIDENT, INTEREST RATE DERIVATIVES",
       "company": "Wells Fargo Bank, N.A.",
       "duration": "2006 — 2012",
+      "tags": ["Sales", "Client Management", "SME"],
       "responsibilities": [
         "Introduced hedging solutions to clients, building effective portfolios to manage risk",
         "Identified cross-sell opportunities to deepen client relationships, generating $10M+ in incremental revenue",
@@ -148,6 +155,7 @@
       "company": "JGD & Associates",
       "location": "San Diego, CA",
       "duration": "2005 — 2006",
+      "tags": ["Audit Compliance", "Client Relations"],
       "responsibilities": [
         "Audited defined contribution and defined benefit retirement plans, ensuring compliance with regulatory requirements",
         "Performed general financial audits and reviews, identifying areas for improvement and providing recommendations to clients",
