@@ -43,6 +43,7 @@
     "convex": "^1.10.0",
     "faker": "^6.6.6",
     "faker-js": "^1.0.0",
+    "framer-motion": "^11.1.8",
     "fs": "^0.0.1-security",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.344.0",
