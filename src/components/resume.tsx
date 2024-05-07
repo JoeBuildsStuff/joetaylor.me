@@ -94,7 +94,7 @@ const ResumePage = () => {
       </div>
       <Separator className="mt-0 mb-4" />
       <div className="flex flex-col ">
-        <div className="flex flex-col space-y-6 w-full bg-muted rounded-lg p-6 md:flex-row md:space-y-0 md:justify-between lg:hidden">
+        <div className="flex flex-col space-y-6 w-full bg-muted rounded-lg p-6 md:flex-row md:space-y-0 md:space-x-16 lg:hidden">
           <SignedIn>
             <p className="text-base items-center flex">
               <div className="bg-primary rounded-sm p-1 mr-4">
