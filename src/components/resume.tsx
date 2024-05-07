@@ -255,14 +255,13 @@ const ResumePage = () => {
                           {/* <div className="absolute rounded-full w-3 h-3 bg-background top-[.52rem] -left-[1.9rem]"></div> */}
                           {exp.title}
                         </Typography.h4>
-                        <div className="flex flex-row space-x-4 items-center justify-start mt-4">
+                        <div className="flex flex-row space-x-4 items-center justify-between mt-4 ">
                           <p className="leading-relaxed text-lg">
                             {exp.company}
                           </p>
-                          <span className="text-xl"> {"|"}</span>
+                          {/* <span className="text-xl"> {"|"}</span> */}
                           <p className="leading-relaxed text-base">
                             {exp.duration}
-                            {}
                           </p>
                         </div>
                         <Typography.ul className="mt-4">
