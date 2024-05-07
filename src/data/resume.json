@@ -1,0 +1,147 @@
+{
+  "contact": {
+    "name": "Joseph A. Taylor",
+    "title": "STRATEGIC CHANGE LEADER",
+    "phone": "---.----.4505",
+    "email": "---.----.taylor@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/joesephataylor/"
+  },
+  "education": [
+    {
+      "degree": "BACHELOR OF SCIENCE, MATHEMATICAL FINANCE & STATISTICS",
+      "institution": "University of California, Santa Barbara"
+    },
+    {
+      "degree": "BACHELOR OF ARTS, BUSINESS ECONOMICS & ACCOUNTING",
+      "institution": "University of California, Santa Barbara"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Certified Public Accountant",
+      "institution": "California Board of Accountancy",
+      "location": "Sacramento, CA"
+    },
+    {
+      "name": "Chartered Financial Analyst Level III Candidate",
+      "institution": "CFA Institute",
+      "location": "Charlottesville, VA"
+    },
+    {
+      "name": "Sustainability Reporting",
+      "institution": "Global Reporting Initiative (GRI)",
+      "location": "Amsterdam, Netherlands"
+    },
+    {
+      "name": "Machine Learning & AI Microbootcamp",
+      "institution": "Columbia Engineering",
+      "issued": "February 22, 2024",
+      "expiration": "No Expiration"
+    },
+    {
+      "name": "Artificial Intelligence: Implications for Business Strategy",
+      "institution": "MIT Sloan School of Management",
+      "issued": "January 16, 2024",
+      "expiration": "No Expiration"
+    }
+  ],
+  "technologies": {
+    "Business Intelligence": ["Tableau", "Qlik", "PowerBI", "Rechart"],
+    "Artificial Intelligence": [
+      "Seal Software",
+      "DocuSign Analyzer & Insight",
+      "Recommind (Acquired by OpenText)",
+      "Eigen",
+      "Evisort"
+    ],
+    "Gen AI LLM": ["OpenAI ChatGPT", "Anthropic Claude", "Meta Llama 3"],
+    "Customer Relationship Management": ["Salesforce", "Microsoft CRM"],
+    "Contract Lifecycle Management": [
+      "Apttus",
+      "Emptoris",
+      "Exari",
+      "SpringCM",
+      "Ironclad",
+      "Evisort"
+    ],
+    "Web Development": [
+      "React",
+      "NextJS",
+      "TailwindCSS",
+      "Shadcn/ui",
+      "Clerk Authentication",
+      "Stripe",
+      "Convex DB",
+      "Vercel",
+      "Stripe"
+    ]
+  },
+  "summary": "Accomplished strategic leader with 15+ years of experience in financial services and technology. Proven track record of driving digital transformation, leveraging AI and data analytics to deliver customer-centric solutions. Extensive knowledge of product development life cycle, technical design, and change management. Recognized thought leader in AI and machine learning applications for business strategy.",
+  "experience": [
+    {
+      "title": "INTEGRATION LEAD - OPERATIONAL RISK",
+      "company": "JPMorgan Chase & Co.",
+      "duration": "2023 — 2024",
+      "responsibilities": [
+        "Lead Delegate for the integration of Heritage First Republic with JPMorgan Consumer and Community Banking for Risk and Control Observations",
+        "Ensured disposition of the 100+ control and process risks as identified in Archer and CORE for operational risks expected to be resolved prior to integration",
+        "Collaborated with cross-functional teams to develop and implement risk mitigation strategies",
+        "Monitored progress and reported on the status of risk remediation efforts to senior leadership"
+      ]
+    },
+    {
+      "title": "STRATEGIC PRIORITIES - DIRECTOR, DIGITAL OPERATIONAL RISK",
+      "company": "First Republic Bank",
+      "duration": "2022 — 2023",
+      "responsibilities": [
+        "Reconciled risk and control operations by utilizing electronic digital documentation tools such as DocuSign, CLM tools including SpringCRM, archive tools such as OnBase, and AI tools including Instabase and Ephesoft",
+        "Rationalized and integrated the fragmented ecosystem that was installed as one-off tools for one-off projects",
+        "Joined 2 of the organization's 6 strategic priorities for the 2023 year, which included operational process mapping and rationalization across LOBs, and the front office client onboarding transformation program utilizing Salesforce",
+        "Represented the documentation component and integration for the client onboarding transformation program"
+      ]
+    },
+    {
+      "title": "CONSULTING – DIRECTOR, FINANCIAL SERVICES CLIENT ADVISORY",
+      "company": "Evisort, Inc.",
+      "duration": "2021 — 2022",
+      "responsibilities": [
+        "Led the vision and strategy for the Global Financial Services Industry, establishing targets and driving overall growth",
+        "Advised senior business leaders on leveraging AI and data analytics for business and technology transformations",
+        "Partnered with account leaders to develop growth plans and drive accountability, resulting in 30% YoY revenue growth",
+        "Drove connections and strategy with Global Partners to enhance client service and expand market share"
+      ]
+    },
+    {
+      "title": "PROGRAM MANAGEMENT – DIRECTOR, ENTERPRISE DIGITIZATION",
+      "company": "Wells Fargo Bank, N.A.",
+      "duration": "2019 — 2021",
+      "responsibilities": [
+        "Deployed AI capabilities through agile methodology to support LIBOR Transition Office and Enterprise Contract Management",
+        "Led digitization ecosystem of 200+ team members, leveraging OCR, RPA, ML, NLP and AI to centralize processes",
+        "Worked with impacted LOBs to source client agreements and extend BAU, driving efficiency and risk reduction",
+        "Reconciled Agreements to Positions across multiple lending and commercial booking platforms"
+      ]
+    },
+    {
+      "title": "PRODUCT OWNER – DIRECTOR, CORPORATE BANKING OPERATIONS",
+      "company": "Wells Fargo Bank, N.A.",
+      "duration": "2012 — 2019",
+      "responsibilities": [
+        "Managed team of 25 and served as liaison across Credit, Onboarding, Sales, Legal and Technology departments",
+        "Owned documentation solutions such as DocuSign, Documentum, Salesforce, and Seal Software (now DocuSign Insight)",
+        "Led documentation programs for regulations like Dodd-Frank, driving compliance and operational efficiency",
+        "Introduced Tableau dashboards to track KPIs, improving data-driven decision making and performance"
+      ]
+    },
+    {
+      "title": "SALES - VICE PRESIDENT, INTEREST RATE DERIVATIVES",
+      "company": "Wells Fargo Bank, N.A.",
+      "duration": "2006 — 2012",
+      "responsibilities": [
+        "Introduced hedging solutions to clients, building effective portfolios to manage risk",
+        "Identified cross-sell opportunities to deepen client relationships, generating $10M+ in incremental revenue",
+        "Maximized client experience through proactive market updates and thought leadership"
+      ]
+    }
+  ]
+}

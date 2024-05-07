@@ -39,14 +39,6 @@ export function Hero() {
               <Link href="/projects">Projects</Link>
             </Button>
           </div>
-          {/* <SignUpButton>
-            <Button
-              variant="default"
-              className="mx-3 w-40 text-lg h-12 lg:h-14 lg:rounded-xl lg:text-xl"
-            >
-              Get Started
-            </Button>
-          </SignUpButton> */}
         </div>
       </div>
     </section>

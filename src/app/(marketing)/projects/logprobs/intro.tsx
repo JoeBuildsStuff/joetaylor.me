@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/popover";
 import { Progress } from "@/components/ui/progress";
 import { Slider } from "@/components/ui/slider";
+import { Spinner } from "@/components/ui/spinner";
 
 interface ChatMessage {
   role: "user" | "assisstant" | "system";
@@ -59,67 +60,73 @@ export default function Demonstration() {
   const [selectedTokenIndexes, setSelectedTokenIndexes] = useState([]);
   const [temperature, setTemperature] = useState(1.0);
   const [perplexity, setPerplexity] = useState<number | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async () => {
+    setIsLoading(true);
     const message: ChatMessage = {
       role: "user",
       content: question,
     };
 
-    const response = await fetch("/api/intro", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        message: message,
-        model: selectedModel,
-        temperature: temperature,
-      }),
-    });
+    try {
+      const response = await fetch("/api/intro", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: message,
+          model: selectedModel,
+          temperature: temperature,
+        }),
+      });
 
-    if (!response.ok) {
-      throw new Error("Something went wrong!");
-    }
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
 
-    const responseJSON = await response.json();
-    setResponse(responseJSON.choices[0].message.content);
-    const logProbsWithSelectedIndex =
-      responseJSON.choices[0].logprobs.content.map(
-        (logProb: LogProb, index: number) => {
-          const selectedIndex = logProb.top_logprobs.findIndex(
-            (topLogProb: TopLogProb) => topLogProb.token === logProb.token
-          );
-          return { ...logProb, selectedIndex };
-        }
+      const responseJSON = await response.json();
+      setResponse(responseJSON.choices[0].message.content);
+      const logProbsWithSelectedIndex =
+        responseJSON.choices[0].logprobs.content.map(
+          (logProb: LogProb, index: number) => {
+            const selectedIndex = logProb.top_logprobs.findIndex(
+              (topLogProb: TopLogProb) => topLogProb.token === logProb.token
+            );
+            return { ...logProb, selectedIndex };
+          }
+        );
+
+      setLogProbs(logProbsWithSelectedIndex);
+      setSelectedTokenIndexes(
+        logProbsWithSelectedIndex.map(
+          (logProb: { selectedIndex: number }) => logProb.selectedIndex
+        )
       );
-
-    setLogProbs(logProbsWithSelectedIndex);
-    setSelectedTokenIndexes(
-      logProbsWithSelectedIndex.map(
-        (logProb: { selectedIndex: number }) => logProb.selectedIndex
-      )
-    );
-    const logProbsArray = responseJSON.choices[0].logprobs.content.map(
-      (logProb: LogProb) => logProb.logprob
-    );
-    const averageLogProb =
-      logProbsArray.reduce((acc: number, curr: number) => acc + curr, 0) /
-      logProbsArray.length;
-    const calculatedPerplexity = Math.exp(-averageLogProb);
-    setPerplexity(calculatedPerplexity);
+      const logProbsArray = responseJSON.choices[0].logprobs.content.map(
+        (logProb: LogProb) => logProb.logprob
+      );
+      const averageLogProb =
+        logProbsArray.reduce((acc: number, curr: number) => acc + curr, 0) /
+        logProbsArray.length;
+      const calculatedPerplexity = Math.exp(-averageLogProb);
+      setPerplexity(calculatedPerplexity);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsLoading(false); // Set loading to false when request completes
+    }
   };
 
   return (
     <div className="w-full flex flex-col gap-4">
       <div className="flex flex-col md:flex-row gap-4">
-        <Card className="md:w-1/2">
+        <Card className="w-full">
           <CardHeader>
-            <CardTitle>Observeing Response Probabilities</CardTitle>
+            <CardTitle>Input a Question</CardTitle>
             <CardDescription>
-              An LLM response is not always the most probable response. This
-              section allows you to observe the alternatives and their
-              probabilities.
+              Input a question and feel free to adjust the temperature slider.
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -167,9 +174,18 @@ export default function Demonstration() {
                 onValueChange={(value) => setSelectedModel(value)}
               >
                 <ToggleGroupItem value="gpt-3.5-turbo">@3.5</ToggleGroupItem>
-                <ToggleGroupItem value="gpt-4">@4.0</ToggleGroupItem>
+                {/* <ToggleGroupItem value="gpt-4">@4.0</ToggleGroupItem> */}
               </ToggleGroup>
-              <Button onClick={handleSubmit}>Submit</Button>
+
+              <Button onClick={handleSubmit}>
+                {isLoading ? (
+                  <div className="flex items-center">
+                    <Spinner />
+                  </div>
+                ) : (
+                  <div>Submit</div>
+                )}
+              </Button>
             </div>
           </CardFooter>
         </Card>
@@ -183,20 +199,6 @@ export default function Demonstration() {
           </CardHeader>
           <CardContent>
             <div className="flex flex-col justify-between h-full">
-              <div className="flex flex-row items-center justify-end space-x-2">
-                <Label
-                  htmlFor="perplexity"
-                  className="text-center text-sm text-muted-foreground"
-                >
-                  Perplexity:
-                </Label>
-                <div
-                  id="perplexity"
-                  className="text-muted-foreground text-sm text-center"
-                >
-                  <p>{perplexity ? perplexity.toFixed(3) : "Calculating..."}</p>
-                </div>
-              </div>
               <div className="">
                 {logProbs.length === 0 ? (
                   <div className="flex flex-col items-center justify-center">
@@ -205,55 +207,75 @@ export default function Demonstration() {
                     </p>
                   </div>
                 ) : (
-                  <TooltipProvider>
-                    <div className="flex flex-wrap">
-                      {logProbs.map((logProb, index) => {
-                        const tokenSpan = {
-                          token: logProb.token,
-                          topLogProbs: logProb.top_logprobs,
-                        };
-
-                        return (
-                          <Popover key={index}>
-                            <PopoverTrigger asChild>
-                              <span className="inline-block bg-secondary rounded px-2.5 py-1 m-1">
-                                {tokenSpan.token}
-                              </span>
-                            </PopoverTrigger>
-                            <PopoverContent>
-                              <table className="w-full">
-                                <thead>
-                                  <tr>
-                                    <th className="px-2 text-left">Token</th>
-                                    <th className="px-2 text-left">
-                                      Probability
-                                    </th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  {tokenSpan.topLogProbs.map(
-                                    (topLogProb, idx) => (
-                                      <tr key={idx}>
-                                        <td className="px-2 text-left">
-                                          {topLogProb.token}
-                                        </td>
-                                        <td className="px-2 text-left">
-                                          {(
-                                            Math.exp(topLogProb.logprob) * 100
-                                          ).toFixed(2)}
-                                          %
-                                        </td>
-                                      </tr>
-                                    )
-                                  )}
-                                </tbody>
-                              </table>
-                            </PopoverContent>
-                          </Popover>
-                        );
-                      })}
+                  <>
+                    <div className="flex flex-row items-center justify-start space-x-2 mb-4">
+                      <Label
+                        htmlFor="perplexity"
+                        className="ml-1  text-center text-sm text-muted-foreground"
+                      >
+                        Perplexity:
+                      </Label>
+                      <div
+                        id="perplexity"
+                        className="text-muted-foreground text-sm text-center"
+                      >
+                        <p>
+                          {perplexity
+                            ? perplexity.toFixed(3)
+                            : "Calculating..."}
+                        </p>
+                      </div>
                     </div>
-                  </TooltipProvider>
+                    <TooltipProvider>
+                      <div className="flex flex-wrap">
+                        {logProbs.map((logProb, index) => {
+                          const tokenSpan = {
+                            token: logProb.token,
+                            topLogProbs: logProb.top_logprobs,
+                          };
+
+                          return (
+                            <Popover key={index}>
+                              <PopoverTrigger asChild>
+                                <span className="inline-block bg-secondary rounded px-2.5 py-1 m-1">
+                                  {tokenSpan.token}
+                                </span>
+                              </PopoverTrigger>
+                              <PopoverContent>
+                                <table className="w-full">
+                                  <thead>
+                                    <tr>
+                                      <th className="px-2 text-left">Token</th>
+                                      <th className="px-2 text-left">
+                                        Probability
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {tokenSpan.topLogProbs.map(
+                                      (topLogProb, idx) => (
+                                        <tr key={idx}>
+                                          <td className="px-2 text-left">
+                                            {topLogProb.token}
+                                          </td>
+                                          <td className="px-2 text-left">
+                                            {(
+                                              Math.exp(topLogProb.logprob) * 100
+                                            ).toFixed(2)}
+                                            %
+                                          </td>
+                                        </tr>
+                                      )
+                                    )}
+                                  </tbody>
+                                </table>
+                              </PopoverContent>
+                            </Popover>
+                          );
+                        })}
+                      </div>
+                    </TooltipProvider>
+                  </>
                 )}
               </div>
             </div>

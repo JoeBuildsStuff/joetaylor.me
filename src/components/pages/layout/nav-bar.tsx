@@ -49,6 +49,9 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
         <Button variant="ghost" className="hidden md:block text-md">
           <Link href="/projects">Projects</Link>
         </Button>
+        <Button variant="ghost" className="hidden md:block text-md">
+          <Link href="/resume">Resume</Link>
+        </Button>
         {/* <Button variant="ghost" className="hidden md:block text-md">
           <Link href="/pricing">Pricing</Link>
         </Button> */}
@@ -58,11 +61,11 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
               Sign In
             </Button>
           </SignInButton>
-          <SignUpButton>
+          {/* <SignUpButton>
             <Button variant="default" className="text-md">
               Join the Club
             </Button>
-          </SignUpButton>
+          </SignUpButton> */}
         </SignedOut>
         <ClerkLoading>
           <div className="rounded-full bg-accent text-muted-foreground w-11 h-11 flex items-center justify-center">

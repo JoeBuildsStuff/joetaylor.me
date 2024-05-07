@@ -55,6 +55,7 @@ import {
 import { v4 as uuidv4 } from "uuid";
 
 import rawSquadData from "@/app/(marketing)/projects/logprobs/data.json";
+import { Spinner } from "@/components/ui/spinner";
 export { rawSquadData };
 
 // Define interfaces for the SQuAD data structure
@@ -158,6 +159,7 @@ export function Chatbot() {
     string[]
   >([]);
   const [autoSubmit, setAutoSubmit] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const runSimulation = async () => {
     for (let i = 0; i < parseInt(retrievalCount, 10); i++) {
@@ -299,6 +301,7 @@ export function Chatbot() {
     qAId: string
   ) => {
     if (!input.trim()) return;
+    setIsLoading(true);
 
     setMessages([]);
 
@@ -397,6 +400,7 @@ export function Chatbot() {
       userRequestedIncompleteAnswer: userRequestedIncompleteAnswer,
     };
     setChatEntries((prevChatEntries) => [...prevChatEntries, newChatEntry]);
+    setIsLoading(false);
   };
 
   const handleChatEntrySelect = (entry: ChatEntry) => {
@@ -609,21 +613,6 @@ export function Chatbot() {
               </div>
               {isImpossible ? (
                 <div className="flex flex-col gap-2">
-                  {/* <Label htmlFor="plausible_answers">Plausible Answers:</Label>
-                  <Textarea
-                    id="plausible_answers"
-                    placeholder="Vanilla ice cream."
-                    value={plausibleAnswers
-                      .map((answer) => answer.text)
-                      .join("\n")}
-                    onChange={(e) =>
-                      setPlausibleAnswers(
-                        e.target.value
-                          .split("\n")
-                          .map((text) => ({ text, answer_start: 0 }))
-                      )
-                    }
-                  /> */}
                   <Label
                     htmlFor="selected_answer"
                     className="text-muted-foreground"
@@ -700,27 +689,16 @@ export function Chatbot() {
                       )
                     }
                   >
-                    Submit
+                    {isLoading ? (
+                      <div className="flex items-center">
+                        <Spinner />
+                      </div>
+                    ) : (
+                      "Submit"
+                    )}
                   </Button>
                 </div>
               </div>
-              {/* <Collapsible className="w-full">
-                <CollapsibleTrigger>
-                  <p className="text-sm text-muted-foreground">
-                    Advanced Options
-                  </p>
-                </CollapsibleTrigger>
-                <CollapsibleContent className="flex flex-row gap-6">
-                  <div className="flex items-center space-x-3">
-                    <Label htmlFor="auto-submit">Auto Submit</Label>
-                    <Switch
-                      id="auto-submit"
-                      checked={autoSubmit}
-                      onCheckedChange={(checked) => setAutoSubmit(checked)}
-                    />
-                  </div>
-                </CollapsibleContent>
-              </Collapsible> */}
             </CardFooter>
           </Card>
         </div>
@@ -844,12 +822,6 @@ export function Chatbot() {
                                   >
                                     Aknowledged
                                   </ToggleGroupItem>
-                                  {/* <ToggleGroupItem
-                                    value="rephrase"
-                                    aria-label="rephrase"
-                                  >
-                                    Why was my question not relevant?
-                                  </ToggleGroupItem> */}
                                 </ToggleGroup>
                               </div>
                             </div>
@@ -867,18 +839,7 @@ export function Chatbot() {
                               {m.content}
                             </div>
                           ) : null}
-                          {/* {(m.role !== "user" && !m.contextWarningPresented) ||
-                          m.userRequestedIncompleteAnswer ? (
-                            <div className="flex flex-row items-end justify-end space-x-4 text-xs text-muted-foreground mr-2">
-                              <ThumbsUp strokeWidth={1.5} className="w-5 h-5" />
-                              <ThumbsDown
-                                strokeWidth={1.5}
-                                className="w-5 h-5"
-                              />
-                            </div>
-                          ) : null} */}
                         </div>
-
                         {m.role === "user" && (
                           <Avatar className="ml-4">
                             <AvatarImage src="" alt="User" />
@@ -971,7 +932,7 @@ export function Chatbot() {
                   <Line
                     type="stepAfter"
                     dataKey="relevant"
-                    strokeWidth={2}
+                    strokeWidth={1}
                     activeDot={{ r: 8, style: { fill: "gray" } }}
                     stroke="gray"
                     dot={
@@ -1066,7 +1027,7 @@ export function Chatbot() {
                   <Line
                     type="monotone"
                     dataKey="confidence"
-                    strokeWidth={2}
+                    strokeWidth={1}
                     activeDot={{
                       r: 8,
                       style: { fill: "gray" },
@@ -1164,7 +1125,7 @@ export function Chatbot() {
                   <Line
                     type="monotone"
                     dataKey="perplexity"
-                    strokeWidth={2}
+                    strokeWidth={1}
                     activeDot={{
                       r: 8,
                       style: { fill: "gray" },
