@@ -9,9 +9,6 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-//import clerk stuff
-import { ClerkProvider } from "@clerk/nextjs";
-
 //import shadcnui stuff
 
 //import providers - theme/clerk/convex

@@ -1,11 +1,3 @@
-import {
-  ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
-} from "@clerk/nextjs";
-
 import React from "react";
 import Image from "next/image";
 
@@ -95,7 +87,7 @@ const ResumePage = () => {
       <Separator className="mt-0 mb-4" />
       <div className="flex flex-col ">
         <div className="flex flex-col space-y-6 w-full bg-muted rounded-lg p-6 md:flex-row md:space-y-0 md:space-x-16 lg:hidden">
-          <SignedIn>
+          {/* <SignedIn>
             <p className="text-base items-center flex">
               <div className="bg-primary rounded-sm p-1 mr-4">
                 <Phone
@@ -112,7 +104,7 @@ const ResumePage = () => {
               </div>
               <span className="">{contact.email}</span>
             </p>
-          </SignedIn>
+          </SignedIn> */}
           <p className="text-base m-0 items-center flex">
             <div className="bg-primary rounded-sm p-1 mr-4">
               <Globe className="w-4 h-4 text-background " strokeWidth={1.5} />
@@ -138,7 +130,7 @@ const ResumePage = () => {
             <div className="bg-muted rounded-lg">
               <div className="flex flex-col space-y-6 w-full bg-muted rounded-lg p-4  ">
                 <h3 className="text-2xl font-bold tracking-widest">CONTACT</h3>
-                <SignedIn>
+                {/* <SignedIn>
                   <p className="text-base items-center flex">
                     <div className="bg-primary rounded-sm p-1 mr-4">
                       <Phone
@@ -155,7 +147,7 @@ const ResumePage = () => {
                     </div>
                     <span className="">{contact.email}</span>
                   </p>
-                </SignedIn>
+                </SignedIn> */}
                 <p className="text-base m-0 items-center flex">
                   <div className="bg-primary rounded-sm p-1 mr-4">
                     <Globe

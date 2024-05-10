@@ -11,16 +11,6 @@ import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 import { ModeToggle } from "@/components/ui/mode-toggle";
 
-//import clerk stuff
-import {
-  SignInButton,
-  SignUpButton,
-  UserButton,
-  SignedIn,
-  SignedOut,
-  ClerkLoading,
-} from "@clerk/nextjs";
-
 //import icon stuff
 import { UserRound } from "lucide-react";
 
@@ -55,26 +45,11 @@ export const NavBar: React.FC<NavBarProps> = ({ currentTheme }) => {
         {/* <Button variant="ghost" className="hidden md:block text-md">
           <Link href="/pricing">Pricing</Link>
         </Button> */}
-        <SignedOut>
-          <SignInButton>
-            <Button variant="outline" className="text-md">
-              Sign In
-            </Button>
-          </SignInButton>
-          {/* <SignUpButton>
-            <Button variant="default" className="text-md">
-              Join the Club
-            </Button>
-          </SignUpButton> */}
-        </SignedOut>
-        <ClerkLoading>
-          <div className="rounded-full bg-accent text-muted-foreground w-11 h-11 flex items-center justify-center">
-            <UserRound className="w-5 h-5" />
-          </div>
-        </ClerkLoading>
-        <SignedIn>
-          <UserButton />
-        </SignedIn>
+
+        <div className="rounded-full bg-accent text-muted-foreground w-11 h-11 flex items-center justify-center">
+          <UserRound className="w-5 h-5" />
+        </div>
+
         <ModeToggle />
       </div>
     </nav>
