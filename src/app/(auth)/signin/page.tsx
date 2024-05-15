@@ -70,6 +70,7 @@ export default function Signin({
     // 1. Create a Supabase client
     const supabase = createClient();
     const origin = headers().get("origin");
+    console.log("origin:", origin);
     // 2. Sign in with GitHub
     const { error, data } = await supabase.auth.signInWithOAuth({
       provider: "google",
