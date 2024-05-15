@@ -17,17 +17,8 @@ import React from "react";
 import Image from "next/image";
 import { headers } from "next/headers";
 import { Typography } from "@/lib/typography";
-// import resumeData from "../data/resume.json";
 
-// import headshot from "../../../../public/images/headshot.jpg";
-import {
-  Globe,
-  Linkedin,
-  Mail,
-  Sparkles,
-  Phone,
-  SquarePen,
-} from "lucide-react";
+import { FileCheck2, Globe, Linkedin, SquarePen } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
@@ -36,6 +27,8 @@ import { redirect } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
+import EditText from "@/components/edit-text";
+import { edgeServerAppPaths } from "next/dist/build/webpack/plugins/pages-manifest-plugin";
 
 interface Contact {
   name: string;
@@ -92,9 +85,9 @@ export default async function ResumePage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  // if (!user) {
-  //   return redirect("/signin");
-  // }
+  if (!user || user.id !== "d8f274c4-5f4e-444b-9c67-df6b5c7da9d7") {
+    return redirect("/resume");
+  }
 
   const { data: resumes } = await supabase.from("resumes").select();
   const resume = resumes ? resumes[0] : null;
@@ -116,6 +109,27 @@ export default async function ResumePage() {
     .from("public-images")
     .getPublicUrl("headshot.png");
 
+  const updateField = (fieldName: string) => {
+    return async (newValue: string) => {
+      "use server";
+
+      const supabase = createClient();
+      const origin = headers().get("origin");
+
+      const { data, error } = await supabase
+        .from("resumes")
+        .update({ data: { ...resume.data, [fieldName]: newValue } })
+        .eq("id", resume.id)
+        .select();
+
+      if (error) {
+        console.error(`Error updating ${fieldName}:`, error);
+      }
+
+      //   return redirect("/resume-edit");
+    };
+  };
+
   return (
     <div
       id="resumePageContainer"
@@ -128,9 +142,9 @@ export default async function ResumePage() {
           size="icon"
           className="absolute text-muted-foreground top-4 right-4"
         >
-          <Link href="/resume-edit">
+          <Link href="/resume">
             {" "}
-            <SquarePen />
+            <FileCheck2 />
           </Link>
         </Button>
       )}
@@ -143,12 +157,16 @@ export default async function ResumePage() {
           className="rounded-full w-[8rem] h-[8rem] lg:w-[10rem] lg:h-[10rem] lg:mr-10"
         />
         <div className="flex flex-col justify-center h-full">
-          <Typography.h1 className="tracking-widest text-2xl">
-            {contact.name}
-          </Typography.h1>
-          <Typography.h4 className="mt-3 tracking-widest text-lg">
-            {contact.title}
-          </Typography.h4>
+          <EditText
+            initialValue={contact.name}
+            onSave={updateField("contact.name")}
+            className="font-extrabold lg:text-5xl tracking-widest text-2xl"
+          />
+          <EditText
+            initialValue={contact.title}
+            onSave={updateField("contact.title")}
+            className="mt-3 tracking-widest text-lg font-semibold"
+          />
         </div>
       </div>
       <Separator className="mt-0 mb-4" />
@@ -254,12 +272,16 @@ export default async function ResumePage() {
                 </h3>
                 {education.map((edu: Education, index: number) => (
                   <div key={index} className="mt-8">
-                    <p className="leading-relaxed text-lg tracking-wide font-semibold">
-                      {edu.degree}
-                    </p>
-                    <p className="leading-relaxed text-lg mt-1 tracking-wide">
-                      {edu.institution}
-                    </p>
+                    <EditText
+                      initialValue={edu.degree}
+                      onSave={updateField("edu.degree")}
+                      className="leading-relaxed text-lg font-semibold tracking-wide"
+                    />
+                    <EditText
+                      initialValue={edu.institution}
+                      onSave={updateField("edu.institution")}
+                      className="leading-relaxed text-lg mt-1 tracking-wide"
+                    />
                   </div>
                 ))}
               </div>
@@ -271,12 +293,16 @@ export default async function ResumePage() {
                 <div className="grid grid-cols-1">
                   {certifications.map((cert: Certification, index: number) => (
                     <div key={index} className="mt-8">
-                      <p className="leading-relaxed text-lg font-semibold tracking-wide">
-                        {cert.name}
-                      </p>
-                      <p className="leading-relaxed text-lg mt-1 tracking-wide">
-                        {cert.institution}
-                      </p>
+                      <EditText
+                        initialValue={cert.name}
+                        onSave={updateField("cert.name")}
+                        className="leading-relaxed text-lg font-semibold tracking-wide"
+                      />
+                      <EditText
+                        initialValue={cert.institution}
+                        onSave={updateField("cert.institution")}
+                        className="leading-relaxed text-lg tracking-wide"
+                      />
                       {/* <Typography.p>{cert.location}</Typography.p> */}
                       {/* {cert.issued && <Typography.p>Issued: {cert.issued}</Typography.p>}
             {cert.expiration && (
@@ -296,13 +322,19 @@ export default async function ResumePage() {
                 {Object.entries(technologies as Record<string, string[]>).map(
                   ([category, techs], index) => (
                     <div key={category} className="mt-8">
-                      <Typography.h4 className="tracking-wide">
-                        {category}
-                      </Typography.h4>
+                      <EditText
+                        initialValue={category}
+                        onSave={updateField("category")}
+                        className="text-xl font-semibold tracking-wide"
+                      />
                       <Typography.ul className="">
                         {techs.map((tech, index) => (
                           <Typography.li key={index} className="pl-2">
-                            {tech}
+                            <EditText
+                              initialValue={tech}
+                              onSave={updateField("tech")}
+                              className=""
+                            />
                           </Typography.li>
                         ))}
                       </Typography.ul>
@@ -317,7 +349,13 @@ export default async function ResumePage() {
               <h3 className="text-2xl font-bold tracking-widest">
                 EXECUTIVE SUMMARY
               </h3>
-              <p className="leading-relaxed text-lg mt-4">{summary}</p>
+              {/* <p className="leading-relaxed text-lg mt-4">{summary}</p> */}
+              <EditText
+                initialValue={summary}
+                onSave={updateField("summary")}
+                multiline
+                className="leading-relaxed text-lg mt-4"
+              />
             </section>
 
             <Separator className="my-4" />
@@ -346,24 +384,36 @@ export default async function ResumePage() {
                         <Typography.h4 className="text-lg mt-4 tracking-wide">
                           <div className="absolute rounded-full w-5 h-5 bg-background border-2 border-input top-[.3rem] -left-[2.2rem]"></div>
                           {/* <div className="absolute rounded-full w-3 h-3 bg-background top-[.52rem] -left-[1.9rem]"></div> */}
-                          {exp.title}
                         </Typography.h4>
 
+                        <EditText
+                          initialValue={exp.title}
+                          onSave={updateField("exp.title")}
+                          className="font-semibold text-lg mt-4 tracking-wide uppercase"
+                        />
                         <div className="flex flex-row space-x-4 items-center justify-between mt-2 ">
-                          <p className="leading-relaxed text-lg">
-                            {exp.company}
-                          </p>
-                          {/* <span className="text-xl"> {"|"}</span> */}
-                          <p className="leading-relaxed text-base">
-                            {exp.duration}
-                          </p>
+                          <EditText
+                            initialValue={exp.company}
+                            onSave={updateField("exp.company")}
+                            className="leading-relaxed text-lg"
+                          />
+                          <EditText
+                            initialValue={exp.duration}
+                            onSave={updateField("exp.duration")}
+                            className="leading-relaxed text-base"
+                          />
                         </div>
 
                         <Typography.ul className="mt-4">
                           {exp.responsibilities.map(
                             (resp: string, index: number) => (
                               <Typography.li className="pl-4" key={index}>
-                                {resp}
+                                <EditText
+                                  initialValue={resp}
+                                  onSave={updateField("exp.responsibilities")}
+                                  className=""
+                                  multiline
+                                />
                               </Typography.li>
                             )
                           )}
@@ -382,12 +432,16 @@ export default async function ResumePage() {
                 </h3>
                 {education.map((edu: Education, index: number) => (
                   <div key={index} className="mt-8">
-                    <p className="leading-relaxed text-lg tracking-wide font-semibold">
-                      {edu.degree}
-                    </p>
-                    <p className="leading-relaxed text-lg mt-1 tracking-wide">
-                      {edu.institution}
-                    </p>
+                    <EditText
+                      initialValue={edu.degree}
+                      onSave={updateField("edu.degree")}
+                      className="leading-relaxed text-lg font-semibold tracking-wide"
+                    />
+                    <EditText
+                      initialValue={edu.institution}
+                      onSave={updateField("edu.institution")}
+                      className="leading-relaxed text-lg mt-1 tracking-wide"
+                    />
                   </div>
                 ))}
                 <Separator className="my-6" />
@@ -397,12 +451,16 @@ export default async function ResumePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   {certifications.map((cert: Certification, index: number) => (
                     <div key={index} className="mt-8">
-                      <p className="leading-relaxed text-lg font-semibold tracking-wide">
-                        {cert.name}
-                      </p>
-                      <p className="leading-relaxed text-lg mt-1 tracking-wide">
-                        {cert.institution}
-                      </p>
+                      <EditText
+                        initialValue={cert.name}
+                        onSave={updateField("cert.name")}
+                        className="leading-relaxed text-lg font-semibold tracking-wide"
+                      />
+                      <EditText
+                        initialValue={cert.institution}
+                        onSave={updateField("cert.institution")}
+                        className="leading-relaxed text-lg tracking-wide"
+                      />
                       {/* <Typography.p>{cert.location}</Typography.p> */}
                       {/* {cert.issued && <Typography.p>Issued: {cert.issued}</Typography.p>}
             {cert.expiration && (
@@ -421,13 +479,19 @@ export default async function ResumePage() {
                   {Object.entries(technologies as Record<string, string[]>).map(
                     ([category, techs], index) => (
                       <div key={category} className="mt-8">
-                        <Typography.h4 className="tracking-wide">
-                          {category}
-                        </Typography.h4>
+                        <EditText
+                          initialValue={category}
+                          onSave={updateField("category")}
+                          className="text-xl font-semibold tracking-wide"
+                        />
                         <Typography.ul className="">
                           {techs.map((tech, index) => (
                             <Typography.li key={index} className="pl-2">
-                              {tech}
+                              <EditText
+                                initialValue={tech}
+                                onSave={updateField("tech")}
+                                className=""
+                              />
                             </Typography.li>
                           ))}
                         </Typography.ul>

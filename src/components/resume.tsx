@@ -10,6 +10,9 @@ import { Separator } from "./ui/separator";
 import { Badge } from "./ui/badge";
 import Link from "next/link";
 
+import { redirect } from "next/navigation";
+import { createClient } from "@/utils/supabase/server";
+
 interface Contact {
   name: string;
   title: string;
@@ -57,7 +60,7 @@ interface ResumePageProps {
   resumeData: ResumeData;
 }
 
-const ResumePage = () => {
+export default async function ResumePage() {
   const {
     contact,
     education,
@@ -66,6 +69,18 @@ const ResumePage = () => {
     summary,
     experience,
   } = resumeData;
+
+  // const supabase = createClient();
+
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
+
+  // if (!user) {
+  //   return redirect("/signin");
+  // }
+
+  // const { data: resume } = await supabase.from("resumes").select();
 
   return (
     <div id="resumePageContainer" className="resume-container mr-4 flex-col">
@@ -373,6 +388,4 @@ const ResumePage = () => {
       </div>
     </div>
   );
-};
-
-export default ResumePage;
+}
