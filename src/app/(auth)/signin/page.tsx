@@ -69,7 +69,11 @@ export default function Signin({
 
     // 1. Create a Supabase client
     const supabase = createClient();
-    const origin = headers().get("origin");
+    const origin = headers().get("origin") || process.env.NEXT_PUBLIC_APP_URL;
+    console.log(
+      "process.env.NEXT_PUBLIC_APP_URL",
+      process.env.NEXT_PUBLIC_APP_URL
+    );
     console.log("origin:", origin);
     // 2. Sign in with GitHub
     const { error, data } = await supabase.auth.signInWithOAuth({
