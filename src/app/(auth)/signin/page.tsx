@@ -79,6 +79,9 @@ export default function Signin({
       },
     });
 
+    console.log("Redirecting to:", data.url);
+    console.log("Full data:", data);
+
     if (error) {
       console.log(error);
     } else {
