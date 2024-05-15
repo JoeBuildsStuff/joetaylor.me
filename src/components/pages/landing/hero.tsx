@@ -1,9 +1,6 @@
 //import next stuff
 import Link from "next/link";
 
-//import clerk stuff
-import { SignUpButton } from "@clerk/nextjs";
-
 //import shadcnui stuff
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
