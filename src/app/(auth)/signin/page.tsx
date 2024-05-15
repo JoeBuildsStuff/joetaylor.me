@@ -79,12 +79,11 @@ export default function Signin({
       },
     });
 
-    console.log("Redirecting to:", data.url);
-    console.log("Full data:", data);
-
     if (error) {
       console.log(error);
     } else {
+      console.log("Inside else Redirecting to:", data.url);
+      console.log("Inside else Full data:", data);
       return redirect(data.url);
     }
     // 3. Redirect to landing page
