@@ -64,7 +64,9 @@ export default function Signin({
     return redirect("/signin?message=Check email to continue sign in process");
   };
 
-  const getURL = () => {
+  const getURL = async () => {
+    "use server";
+
     let url =
       process?.env?.NEXT_PUBLIC_SITE_URL ?? // Set this to your site URL in production env.
       process?.env?.NEXT_PUBLIC_VERCEL_URL ?? // Automatically set by Vercel.
@@ -91,7 +93,7 @@ export default function Signin({
     const { error, data } = await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: `${getURL()}auth/callback`,
+        redirectTo: `${origin}/auth/callback`,
       },
     });
 
