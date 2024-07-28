@@ -9,17 +9,15 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-//import clerk stuff
-import { ClerkProvider } from "@clerk/nextjs";
-
 //import shadcnui stuff
 
 //import providers - theme/clerk/convex
 import { Providers } from "@/components/providers";
 
 //import custom stuff
-import { NavBar } from "@/components/pages/layout/nav-bar";
+import { MainNav } from "@/components/pages/layout/main-nav";
 import { Footer } from "@/components/pages/layout/footer";
+import { SiteHeader } from "@/components/pages/layout/site-header";
 
 export const metadata: Metadata = {
   title: "Joe Taylor",
@@ -33,16 +31,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-6xl mx-auto",
-          fontSans.variable
-        )}
-      >
-        <Providers>
-          <NavBar currentTheme="light" />
-          {children}
-        </Providers>
+      <body className={cn("font-sans antialiased ", fontSans.variable)}>
+        <div
+          className={cn(
+            "min-h-screen bg-background max-w-6xl mx-auto",
+            fontSans.variable
+          )}
+        >
+          <Providers>
+            <SiteHeader />
+            {children}
+          </Providers>
+        </div>
       </body>
       {/* <Footer /> */}
     </html>
