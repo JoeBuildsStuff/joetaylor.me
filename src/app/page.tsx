@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 
 import { MarkdownComponents as MDC } from "../components/markdowncomponents";
 
-import bot_reading from "../../public/projects/logprobs/bot_reading.jpg";
+import bot_reading from "../../public/projects/logprobs/bot_reading.png";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {

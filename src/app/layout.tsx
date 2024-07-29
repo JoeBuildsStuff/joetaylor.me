@@ -20,8 +20,35 @@ import { Footer } from "@/components/pages/layout/footer";
 import { SiteHeader } from "@/components/pages/layout/site-header";
 
 export const metadata: Metadata = {
-  title: "Joe Taylor",
-  description: "Joe Taylor's personal website",
+  title: "Joe Taylor's Website",
+  description: "Personal website showcasing what Joe Taylor is up to.",
+  keywords: [
+    "Joe Taylor",
+    "projects",
+    "portfolio",
+    "web development",
+    "software engineering",
+    "personal website",
+  ],
+  authors: [{ name: "Joe Taylor" }],
+  creator: "Joe Taylor",
+  publisher: "Joe Taylor",
+  openGraph: {
+    title: "Joe Taylor's Website",
+    description: "Discover what Joe Taylor is up to.",
+    url: "https://joetaylor.me",
+    siteName: "Joe Taylor's Corner of the Internet",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Joe Taylor's Website",
+    description: "Explore Joe Taylor's corner of the internet.",
+    creator: "@joetaylor",
+  },
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({

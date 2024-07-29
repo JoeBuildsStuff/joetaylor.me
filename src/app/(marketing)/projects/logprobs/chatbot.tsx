@@ -560,8 +560,8 @@ export function Chatbot() {
 
   return (
     <div className="flex flex-col w-full">
-      <div className="flex flex-row w-full h-full space-x-4">
-        <div className="w-1/2 space-y-4">
+      <div className="flex flex-col md:flex-row w-full h-full space-y-4 md:space-y-0 md:space-x-4">
+        <div className="w-full md:w-1/2 space-y-4">
           <Card className="w-full">
             <CardHeader>
               <CardTitle>Reference Context and Question:</CardTitle>
@@ -656,7 +656,8 @@ export function Chatbot() {
               <div className="flex flex-row w-full justify-between">
                 <div className="flex flex-row items-center space-x-2">
                   <Button variant="outline" onClick={handleRandomQAD}>
-                    <Dices /> <span className="ml-2">Random</span>
+                    <Dices />{" "}
+                    <span className="ml-2 hidden md:block">Random</span>
                   </Button>
                 </div>
 
@@ -669,9 +670,14 @@ export function Chatbot() {
                     onValueChange={(value) => setSelectedModel(value)}
                   >
                     <ToggleGroupItem value="gpt-3.5-turbo">
-                      @GPT 3.5
+                      @<span className="hidden md:block">GPT</span>
+                      <span>3.5</span>
                     </ToggleGroupItem>
-                    <ToggleGroupItem value="gpt-4">@GPT 4.0</ToggleGroupItem>
+                    <ToggleGroupItem value="gpt-4">
+                      {" "}
+                      @<span className="hidden md:block">GPT</span>
+                      <span>4.0</span>
+                    </ToggleGroupItem>
                   </ToggleGroup>
 
                   <Button
@@ -694,7 +700,7 @@ export function Chatbot() {
                         <Spinner />
                       </div>
                     ) : (
-                      "Submit"
+                      "Send"
                     )}
                   </Button>
                 </div>
@@ -702,7 +708,7 @@ export function Chatbot() {
             </CardFooter>
           </Card>
         </div>
-        <div className="w-1/2 md:w-2/3">
+        <div className="w-full md:w-2/3">
           <Card className="relative w-full h-full">
             <CardHeader>
               <CardTitle>
@@ -857,8 +863,8 @@ export function Chatbot() {
           </Card>
         </div>
       </div>
-      <div className="flex flex-row w-full mt-4 space-x-4">
-        <Card className="w-1/3">
+      <div className="flex flex-col md:flex-row w-full mt-4 space-y-4 md:space-y-0 md:space-x-4">
+        <Card className="w-full md:w-1/3">
           <CardHeader>
             <CardTitle>Context Relavance</CardTitle>
             <CardDescription>
@@ -961,7 +967,7 @@ export function Chatbot() {
             </div>
           </CardContent>
         </Card>
-        <Card className="w-1/3">
+        <Card className="w-full md:w-1/3">
           <CardHeader>
             <CardTitle>Confidence Score</CardTitle>
             <CardDescription>
@@ -1059,7 +1065,7 @@ export function Chatbot() {
             </div>
           </CardContent>
         </Card>
-        <Card className="w-1/3">
+        <Card className="w-full md:w-1/3">
           <CardHeader>
             <CardTitle>Perplexity Scores</CardTitle>
             <CardDescription>
@@ -1470,56 +1476,107 @@ export function Chatbot() {
           <CardHeader>
             <CardTitle>
               Chat Entries
-              <div className="flex flex-row gap-4 absolute top-5 right-5 items-end">
-                <div className="flex flex-col gap-2">
-                  <Label
-                    htmlFor="retrieval-count"
-                    className="text-sm text-muted-foreground"
-                  >
-                    Retrieval Count
-                  </Label>
-                  <ToggleGroup
-                    id="retrieval-count"
-                    variant="outline"
-                    type="single"
-                    defaultValue="1"
-                    onValueChange={(value) => setRetrievalCount(value)}
-                  >
-                    <ToggleGroupItem value="1">1</ToggleGroupItem>
-                    <ToggleGroupItem value="5">5</ToggleGroupItem>
-                    <ToggleGroupItem value="10">10</ToggleGroupItem>
-                  </ToggleGroup>
+              <div className="absolute top-5 right-5">
+                <Popover>
+                  <PopoverTrigger asChild>
+                    <Button variant="outline" className="md:hidden">
+                      Options
+                    </Button>
+                  </PopoverTrigger>
+                  <PopoverContent className="w-80">
+                    <div className="flex flex-col gap-4">
+                      <div className="flex flex-col gap-2">
+                        <Label
+                          htmlFor="retrieval-count"
+                          className="text-sm text-muted-foreground"
+                        >
+                          Retrieval Count
+                        </Label>
+                        <ToggleGroup
+                          id="retrieval-count"
+                          variant="outline"
+                          type="single"
+                          defaultValue="1"
+                          onValueChange={(value) => setRetrievalCount(value)}
+                        >
+                          <ToggleGroupItem value="1">1</ToggleGroupItem>
+                          <ToggleGroupItem value="5">5</ToggleGroupItem>
+                          <ToggleGroupItem value="10">10</ToggleGroupItem>
+                        </ToggleGroup>
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <Label
+                          htmlFor="repeat-count"
+                          className="text-sm text-muted-foreground"
+                        >
+                          Repeat Count
+                        </Label>
+                        <ToggleGroup
+                          id="repeat-count"
+                          variant="outline"
+                          type="single"
+                          defaultValue="1"
+                          onValueChange={(value) => setRepeatCount(value)}
+                        >
+                          <ToggleGroupItem value="1">1</ToggleGroupItem>
+                          <ToggleGroupItem value="5">5</ToggleGroupItem>
+                          <ToggleGroupItem value="10">10</ToggleGroupItem>
+                        </ToggleGroup>
+                      </div>
+                      <Button onClick={runSimulation}>Run</Button>
+                      <Button variant="secondary" onClick={handleDownload}>
+                        <Download className="w-5 h-5" />
+                      </Button>
+                    </div>
+                  </PopoverContent>
+                </Popover>
+                <div className="hidden md:flex md:flex-row md:gap-4 md:items-end">
+                  <div className="flex flex-col gap-2">
+                    <Label
+                      htmlFor="retrieval-count"
+                      className="text-sm text-muted-foreground"
+                    >
+                      Retrieval Count
+                    </Label>
+                    <ToggleGroup
+                      id="retrieval-count"
+                      variant="outline"
+                      type="single"
+                      defaultValue="1"
+                      onValueChange={(value) => setRetrievalCount(value)}
+                    >
+                      <ToggleGroupItem value="1">1</ToggleGroupItem>
+                      <ToggleGroupItem value="5">5</ToggleGroupItem>
+                      <ToggleGroupItem value="10">10</ToggleGroupItem>
+                    </ToggleGroup>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <Label
+                      htmlFor="repeat-count"
+                      className="text-sm text-muted-foreground"
+                    >
+                      Repeat Count
+                    </Label>
+                    <ToggleGroup
+                      id="repeat-count"
+                      variant="outline"
+                      type="single"
+                      defaultValue="1"
+                      onValueChange={(value) => setRepeatCount(value)}
+                    >
+                      <ToggleGroupItem value="1">1</ToggleGroupItem>
+                      <ToggleGroupItem value="5">5</ToggleGroupItem>
+                      <ToggleGroupItem value="10">10</ToggleGroupItem>
+                    </ToggleGroup>
+                  </div>
+                  <Button onClick={runSimulation}>Run</Button>
+                  <Button variant="secondary" onClick={handleDownload}>
+                    <Download className="w-5 h-5" />
+                  </Button>
                 </div>
-                <div className="flex flex-col gap-2">
-                  <Label
-                    htmlFor="repeat-count"
-                    className="text-sm text-muted-foreground"
-                  >
-                    Repeat Count
-                  </Label>
-                  <ToggleGroup
-                    id="repeat-count"
-                    variant="outline"
-                    type="single"
-                    defaultValue="1"
-                    onValueChange={(value) => setRepeatCount(value)}
-                  >
-                    <ToggleGroupItem value="1">1</ToggleGroupItem>
-                    <ToggleGroupItem value="5">5</ToggleGroupItem>
-                    <ToggleGroupItem value="10">10</ToggleGroupItem>
-                  </ToggleGroup>
-                </div>
-                <Button onClick={runSimulation}>Run</Button>
-                <Button
-                  variant="secondary"
-                  className=""
-                  onClick={handleDownload}
-                >
-                  <Download className="w-5 h-5" />
-                </Button>
               </div>
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="mt-4">
               View the chat entries in a tabular format.
             </CardDescription>
           </CardHeader>
