@@ -3,7 +3,6 @@ import Link from "next/link";
 import { MainNav } from "@/components/pages/layout/main-nav";
 // import { MobileNav } from "@/components/mobile-nav"
 import { ModeToggle } from "@/components/ui/mode-toggle";
-import AuthButton from "@/components/AuthButton";
 
 export function SiteHeader() {
   return (
@@ -12,7 +11,6 @@ export function SiteHeader() {
         <MainNav />
         {/* <MobileNav /> */}
         <div className="flex items-center space-x-2 md:space-x-10">
-          <AuthButton />
           <ModeToggle />
         </div>
       </div>

@@ -17,9 +17,9 @@ import React from "react";
 import Image from "next/image";
 import { headers } from "next/headers";
 import { Typography } from "@/lib/typography";
-// import resumeData from "../data/resume.json";
+import resumeData from "@/data/resume.json";
+import headshot from "../../../../public/headshot.png";
 
-// import headshot from "../../../../public/images/headshot.jpg";
 import {
   Globe,
   Linkedin,
@@ -32,10 +32,10 @@ import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
-import { redirect } from "next/navigation";
-import { createClient } from "@/utils/supabase/server";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
+// import { redirect } from "next/navigation";
+// import { createClient } from "@/utils/supabase/server";
+// import { Button } from "@/components/ui/button";
+// import { Textarea } from "@/components/ui/textarea";
 
 interface Contact {
   name: string;
@@ -86,22 +86,22 @@ interface Resume {
 }
 
 export default async function ResumePage() {
-  const supabase = createClient();
+  // const supabase = createClient();
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  // const {
+  //   data: { user },
+  // } = await supabase.auth.getUser();
 
   // if (!user) {
   //   return redirect("/signin");
   // }
 
-  const { data: resumes } = await supabase.from("resumes").select();
-  const resume = resumes ? resumes[0] : null;
+  // const { data: resumes } = await supabase.from("resumes").select();
+  // const resume = resumes ? resumes[0] : null;
 
-  if (!resume) {
-    return <div>No resume data found</div>;
-  }
+  // if (!resume) {
+  //   return <div>No resume data found</div>;
+  // }
 
   const {
     contact,
@@ -110,18 +110,18 @@ export default async function ResumePage() {
     technologies,
     summary,
     experience,
-  } = resume.data;
+  } = resumeData;
 
-  const { data: imageUrl } = await supabase.storage
-    .from("public-images")
-    .getPublicUrl("headshot.png");
+  // const { data: imageUrl } = await supabase.storage
+  // .from("public-images")
+  // .getPublicUrl("headshot.png");
 
   return (
     <div
       id="resumePageContainer"
       className="relative resume-container mx-4 flex-col"
     >
-      {user && (
+      {/* {user && (
         <Button
           asChild
           variant="ghost"
@@ -133,10 +133,10 @@ export default async function ResumePage() {
             <SquarePen />
           </Link>
         </Button>
-      )}
+      )} */}
       <div className="flex flex-row h-[12rem] space-x-4 items-center justify-start">
         <Image
-          src={imageUrl.publicUrl}
+          src={headshot}
           alt="Head Shot"
           width={100}
           height={100}
