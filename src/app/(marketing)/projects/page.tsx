@@ -169,7 +169,7 @@ export default function Page() {
               className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
             />
           </div>
-          <div className="flex grow flex-col items-left justify-center space-y-8 w-[15rem] rounded-xl mt-4">
+          <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
             <div className="flex flex-col space-y-2 m-4 sm:mr-4">
               <MDC.p className="text-sm text-muted-foreground">July 2024</MDC.p>
               <MDC.h4>SocialPost-AI</MDC.h4>
