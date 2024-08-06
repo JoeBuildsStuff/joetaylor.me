@@ -1,16 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRightFromLine } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 import { MarkdownComponents as MDC } from "@/components/markdowncomponents";
@@ -21,6 +13,7 @@ import bot_job from "../../../../public/projects/jobfinder-ai/bot_job.png";
 import bot_chat from "../../../../public/projects/chatapp-ai/bot_chat.png";
 import bot_blog from "../../../../public/projects/socialpost-ai/bot_blog.png";
 import bot_task from "../../../../public/projects/taskmanger-ai/bot_task.png";
+import bot_art from "../../../../public/projects/createart-ai/bot_createart.png";
 
 export default function Page() {
   return (
@@ -30,8 +23,27 @@ export default function Page() {
           Some Projects.
         </h1>
         <p className="mt-3 leading-8 text-xl text-muted-foreground">
-          Some of the things I&apos;ve been working on.
+          Some of the things I&apos;ve been working on. Tinkering with LLMs and
+          building tools to help me do it.
         </p>
+        <p className="mt-3 leading-8 text-xl text-muted-foreground">
+          The following projects were primarily built with:
+        </p>
+        <ul className="mt-3 list-disc list-inside space-y-2 text-muted-foreground">
+          <li>Frontend: Next.js, Tailwind CSS, Shadcn/ui, Lucide Icons</li>
+          <li>Hosting: Vercel</li>
+          <li>Backend: Supabase (BaaS)</li>
+          <li>Authentication: OAuth (GitHub and Google)</li>
+          <li>AI/ML: OpenAI, Anthropic, Meta LLM models</li>
+          <li>
+            Speech-to-Text: Whisper, Deepgram (for diarization and streaming)
+          </li>
+          <li>GPU Compute: RunPod, GCP, Azure (mainly T4s)</li>
+          <li>
+            Serverless: GCP Functions (for microservices beyond Vercel&apos;s
+            limits)
+          </li>
+        </ul>
       </div>
       <Separator className="mb-8" />
       <div className="mt-12 max-w-[50rem] my-4 rounded-xl space-y-8">
@@ -55,13 +67,21 @@ export default function Page() {
               <MDC.p className="text-muted-foreground">
                 Lots of learnings across speech to text, and audio embeddings.
               </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <Badge>Streaming Transcription</Badge>
+                <Badge>Speaker Diarization</Badge>
+                <Badge>Audio Embeddings</Badge>
+                <Badge>Chat Interface</Badge>
+                <Badge>Meeting Summarization</Badge>
+                <Badge>Text Semantic Classification</Badge>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://meetingnotes-ai.com">Check it out</Link>
+              <Link href="https://meetingnotes-ai.com">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -86,13 +106,23 @@ export default function Page() {
                 Then, utilizing token probabilities to defend against responses
                 that appear to contain hallucinations.
               </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Token Probabilities</Badge>
+                  <Badge>Token Classification</Badge>
+                  <Badge>Preplexity Scores</Badge>
+                  <Badge>Chat Interface</Badge>
+                  <Badge>Dual Agent</Badge>
+                  <Badge>Synthetic Dataset</Badge>
+                </div>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="/projects/logprobs">Check it out</Link>
+              <Link href="/projects/logprobs">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -115,13 +145,24 @@ export default function Page() {
               <MDC.p className="text-muted-foreground">
                 Using job postings and resumes to match candidates to jobs.
               </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Web Scraping</Badge>
+                  <Badge>JSON Mode</Badge>
+                  <Badge>LLM Data Extraction</Badge>
+                  <Badge>Multi-Agent</Badge>
+                  <Badge>Text Embeddings</Badge>
+                  <Badge>Embedding Search</Badge>
+                  <Badge>Resume Generation</Badge>
+                </div>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://jobfinder-ai.com">Check it out</Link>
+              <Link href="https://jobfinder-ai.com">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -150,13 +191,21 @@ export default function Page() {
                 So I caved and built an interface to use the API. Challenge was
                 to complete it in 1 day.
               </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>1 Day Challenge</Badge>
+                  <Badge>Tool Usage</Badge>
+                  <Badge>LLM Web Search</Badge>
+                  <Badge>Multi File Chat</Badge>
+                </div>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://chatapp-ai.com">Check it out</Link>
+              <Link href="https://chatapp-ai.com">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -169,7 +218,7 @@ export default function Page() {
               className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
             />
           </div>
-          <div className="flex grow flex-col items-left justify-center space-y-8 w-[15rem] rounded-xl mt-4">
+          <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
             <div className="flex flex-col space-y-2 m-4 sm:mr-4">
               <MDC.p className="text-sm text-muted-foreground">July 2024</MDC.p>
               <MDC.h4>SocialPost-AI</MDC.h4>
@@ -184,13 +233,21 @@ export default function Page() {
               <MDC.p className="text-muted-foreground">
                 Perhaps we can imagine a better interface?
               </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>LLM Workflow</Badge>
+                  <Badge>Gen AI Suggestions</Badge>
+                  <Badge>User Critique</Badge>
+                  <Badge>Human in the Loop</Badge>
+                </div>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://socialpost-ai.com">Check it out</Link>
+              <Link href="https://socialpost-ai.com">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -216,13 +273,61 @@ export default function Page() {
                 So I built a simple task manager to help me keep track of the
                 things I need to do.
               </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>LLM Project Manager</Badge>
+                  <Badge>Tool Calling</Badge>
+                  <Badge>Chat Interface</Badge>
+                  <Badge>WYSIWYG LLM Editing</Badge>
+                </div>
+              </div>
             </div>
             <Button
               asChild
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://taskmanager-ai.com">Check it out</Link>
+              <Link href="https://taskmanager-ai.com">Live Site</Link>
+            </Button>
+          </div>
+        </div>
+        <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
+          <div className="flex justify-center sm:block">
+            <Image
+              src={bot_art}
+              alt="Thumbnail"
+              width={200}
+              height={200}
+              className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+            />
+          </div>
+          <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
+            <div className="flex flex-col space-y-2 m-4 sm:mr-4">
+              <MDC.p className="text-sm text-muted-foreground">Aug 2024</MDC.p>
+              <MDC.h4>CreateArt-AI</MDC.h4>
+              <MDC.p className="text-muted-foreground">
+                I really wanted to begin integrating images into my projects.
+              </MDC.p>
+              <MDC.p className="text-muted-foreground">
+                So I built a simple tool using the Stability AI API to generate
+                images.
+              </MDC.p>
+              <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
+                  <Badge>Gen AI</Badge>
+                  <Badge>Image Generation</Badge>
+                  <Badge>Aspect Ratio</Badge>
+                  <Badge>Image Editing</Badge>
+                  <Badge>Image Prompting</Badge>
+                </div>
+              </div>
+            </div>
+            <Button
+              asChild
+              variant="outline"
+              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
+            >
+              <Link href="https://createart-ai.com">Live Site</Link>
             </Button>
           </div>
         </div>
