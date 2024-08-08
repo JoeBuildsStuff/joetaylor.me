@@ -14,6 +14,7 @@ import bot_chat from "../../../../public/projects/chatapp-ai/bot_chat.png";
 import bot_blog from "../../../../public/projects/socialpost-ai/bot_blog.png";
 import bot_task from "../../../../public/projects/taskmanger-ai/bot_task.png";
 import bot_art from "../../../../public/projects/createart-ai/bot_createart.png";
+import wysiwyg from "../../../../public/projects/wysiwyg-ai/wysiwyg.png";
 
 export default function Page() {
   return (

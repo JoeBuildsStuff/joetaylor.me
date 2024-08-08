@@ -24,6 +24,9 @@ import bot_chat from "../../public/projects/chatapp-ai/bot_chat.png";
 import bot_blog from "../../public/projects/socialpost-ai/bot_blog.png";
 import bot_task from "../../public/projects/taskmanger-ai/bot_task.png";
 import bot_art from "../../public/projects/createart-ai/bot_createart.png";
+import wysiwyg from "../../public/projects/wysiwyg-ai/wysiwyg.png";
+
+import wysiwyg_ai from "../../public/projects/wysiwyg-ai/wysiwyg_ai.png";
 
 export default function Home() {
   return (
@@ -356,6 +359,52 @@ export default function Home() {
                 className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
               >
                 <Link href="https://createart-ai.com">Live Site</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
+            <div className="flex justify-center sm:block">
+              <Image
+                src={wysiwyg}
+                alt="Thumbnail"
+                width={200}
+                height={200}
+                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+              />
+            </div>
+            <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
+              <div className="flex flex-col space-y-2 m-4 sm:mr-4">
+                <MDC.p className="text-sm text-muted-foreground">
+                  Aug 2024
+                </MDC.p>
+                <MDC.h4>WYSIWYG-AI</MDC.h4>
+                <MDC.p className="text-muted-foreground">
+                  Across my previous projects I had needed more features native
+                  to a rich text editor.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  And I was never happy with what I ended up with, so I built a
+                  simple WYSIWYG editor that I can continue to improve.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  This editor will be what we can drop into other projects when
+                  needed.
+                </MDC.p>
+                <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2">
+                    <Badge>WYSIWYG</Badge>
+                    <Badge>Rich Text</Badge>
+                    <Badge>Gen AI Text Completion</Badge>
+                    <Badge>LLM Editing</Badge>
+                  </div>
+                </div>
+              </div>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
+              >
+                <Link href="https://wysiwyg-ai.com">Live Site</Link>
               </Button>
             </div>
           </div>
