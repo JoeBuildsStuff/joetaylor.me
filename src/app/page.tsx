@@ -12,23 +12,41 @@ import { Partners } from "@/components/pages/landing/partners";
 import { Button } from "@/components/ui/button";
 
 import { Badge } from "@/components/ui/badge";
-
-import { Separator } from "@/components/ui/separator";
-
 import { MarkdownComponents as MDC } from "@/components/markdowncomponents";
 
-import bot_reading from "../../public/projects/logprobs/bot_reading.png";
-import bot_writing from "../../public/projects/meetingnotes-ai/bot_writing.png";
-import bot_job from "../../public/projects/jobfinder-ai/bot_job.png";
-import bot_chat from "../../public/projects/chatapp-ai/bot_chat.png";
-import bot_blog from "../../public/projects/socialpost-ai/bot_blog.png";
-import bot_task from "../../public/projects/taskmanger-ai/bot_task.png";
-import bot_art from "../../public/projects/createart-ai/bot_createart.png";
-import wysiwyg from "../../public/projects/wysiwyg-ai/wysiwyg.png";
-
+import bot_reading from "../../public/projects/logprobs/logprobs.png";
+import bot_writing from "../../public/projects/meetingnotes-ai/meetingnotes_ai.png";
+import bot_job from "../../public/projects/jobfinder-ai/jobfinder_ai.png";
+import bot_chat from "../../public/projects/chatapp-ai/chatapp_ai.png";
+import bot_blog from "../../public/projects/socialpost-ai/socialpost_ai.png";
+import bot_task from "../../public/projects/taskmanger-ai/taskmanager_ai.png";
+import bot_art from "../../public/projects/createart-ai/createart_ai.png";
+import wysiwyg from "../../public/projects/wysiwyg-ai/wysiwyg-ai.png";
+import bot_news from "../../public/projects/news-ai/news-ai.png";
 import wysiwyg_ai from "../../public/projects/wysiwyg-ai/wysiwyg_ai.png";
+import { Globe } from "lucide-react";
+
+import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 
 export default function Home() {
+  const technologies = [
+    "Next.js",
+    "Tailwind CSS",
+    "Shadcn/ui",
+    "Lucide Icons",
+    "Vercel",
+    "Supabase",
+    "OpenAI",
+    "Anthropic",
+    "Meta Llama",
+    "Whisper",
+    "Deepgram",
+    "RunPod",
+    "GCP",
+    "Azure",
+    "NVIDIA T4",
+    "GCP Functions",
+  ];
   return (
     <div className="">
       <Hero />
@@ -42,24 +60,10 @@ export default function Home() {
             Some of the things I&apos;ve been working on. Tinkering with LLMs
             and building tools to help me do it.
           </p>
-          <p className="mt-3 leading-8 text-xl text-muted-foreground">
+          <p className="my-3 leading-8 text-xl text-muted-foreground">
             The following projects were primarily built with:
           </p>
-          <ul className="mt-3 list-disc list-inside space-y-2 text-muted-foreground">
-            <li>Frontend: Next.js, Tailwind CSS, Shadcn/ui, Lucide Icons</li>
-            <li>Hosting: Vercel</li>
-            <li>Backend: Supabase (BaaS)</li>
-            <li>Authentication: OAuth (GitHub and Google)</li>
-            <li>AI/ML: OpenAI, Anthropic, Meta LLM models</li>
-            <li>
-              Speech-to-Text: Whisper, Deepgram (for diarization and streaming)
-            </li>
-            <li>GPU Compute: RunPod, GCP, Azure (mainly T4s)</li>
-            <li>
-              Serverless: GCP Functions (for microservices beyond Vercel&apos;s
-              limits)
-            </li>
-          </ul>
+          <InfiniteCarousel items={technologies} />
         </div>
 
         <div className="mt-12 max-w-[50rem] my-4 rounded-xl space-y-8">
@@ -69,7 +73,7 @@ export default function Home() {
                 src={bot_writing}
                 alt="Thumbnail"
                 layout="fixed"
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                className="p-2 overflow-hidden shadow-md bg-background h-[220px] w-[323px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -85,7 +89,7 @@ export default function Home() {
                 <MDC.p className="text-muted-foreground">
                   Lots of learnings across speech to text, and audio embeddings.
                 </MDC.p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                   <Badge>Streaming Transcription</Badge>
                   <Badge>Speaker Diarization</Badge>
                   <Badge>Audio Embeddings</Badge>
@@ -94,13 +98,14 @@ export default function Home() {
                   <Badge>Text Semantic Classification</Badge>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://meetingnotes-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://meetingnotes-ai.com">
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -109,7 +114,7 @@ export default function Home() {
                 src={bot_reading}
                 alt="Thumbnail"
                 layout="fixed"
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                className="p-2 overflow-hidden shadow-md bg-background h-[240px] w-[348px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -127,7 +132,7 @@ export default function Home() {
                   responses that appear to contain hallucinations.
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>Token Probabilities</Badge>
                     <Badge>Token Classification</Badge>
                     <Badge>Preplexity Scores</Badge>
@@ -137,13 +142,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="/projects/logprobs">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="/projects/logprobs">
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -152,7 +158,7 @@ export default function Home() {
                 src={bot_job}
                 alt="Thumbnail"
                 layout="fixed"
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                className="p-2 overflow-hidden shadow-md bg-background h-[255px] w-[354px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -169,7 +175,7 @@ export default function Home() {
                   Using job postings and resumes to match candidates to jobs.
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>Web Scraping</Badge>
                     <Badge>JSON Mode</Badge>
                     <Badge>LLM Data Extraction</Badge>
@@ -180,13 +186,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://jobfinder-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://jobfinder-ai.com">
+                    {" "}
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -195,7 +203,7 @@ export default function Home() {
                 src={bot_chat}
                 alt="Thumbnail"
                 layout="fixed"
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                className="p-1 overflow-hidden shadow-md bg-background h-[268.5px] w-[354px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -217,7 +225,7 @@ export default function Home() {
                   was to complete it in 1 day.
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>1 Day Challenge</Badge>
                     <Badge>Tool Usage</Badge>
                     <Badge>LLM Web Search</Badge>
@@ -225,13 +233,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://chatapp-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://chatapp-ai.com">
+                    {" "}
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -240,7 +250,7 @@ export default function Home() {
                 src={bot_blog}
                 alt="Thumbnail"
                 layout="fixed"
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                className="p-2 overflow-hidden shadow-md bg-background h-[235.5px] w-[384px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -261,7 +271,7 @@ export default function Home() {
                   Perhaps we can imagine a better interface?
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>LLM Workflow</Badge>
                     <Badge>Gen AI Suggestions</Badge>
                     <Badge>User Critique</Badge>
@@ -269,13 +279,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://socialpost-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://socialpost-ai.com">
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -283,9 +294,9 @@ export default function Home() {
               <Image
                 src={bot_task}
                 alt="Thumbnail"
-                width={240}
+                width={390}
                 height={240}
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                className="p-2 overflow-hidden shadow-md bg-background h-[240px] w-[390px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -303,7 +314,7 @@ export default function Home() {
                   things I need to do.
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>LLM Project Manager</Badge>
                     <Badge>Tool Calling</Badge>
                     <Badge>Chat Interface</Badge>
@@ -311,13 +322,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://taskmanager-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://taskmanager-ai.com">
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -325,9 +337,9 @@ export default function Home() {
               <Image
                 src={bot_art}
                 alt="Thumbnail"
-                width={200}
-                height={200}
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                width={335.625}
+                height={292.5}
+                className="p-2 overflow-hidden shadow-md bg-background h-[292.5px] w-[335.625px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -344,7 +356,7 @@ export default function Home() {
                   generate images.
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>Gen AI</Badge>
                     <Badge>Image Generation</Badge>
                     <Badge>Aspect Ratio</Badge>
@@ -353,13 +365,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://createart-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://createart-ai.com">
+                    {" "}
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -367,9 +381,9 @@ export default function Home() {
               <Image
                 src={wysiwyg}
                 alt="Thumbnail"
-                width={200}
-                height={200}
-                className="overflow-hidden shadow-md bg-background h-[15rem] w-[15rem] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+                width={337.5}
+                height={337.5}
+                className="p-4 overflow-hidden shadow-md bg-background h-[337.5px] w-[337.5px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
               />
             </div>
             <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
@@ -391,7 +405,7 @@ export default function Home() {
                   needed.
                 </MDC.p>
                 <div className="flex flex-wrap gap-2">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     <Badge>WYSIWYG</Badge>
                     <Badge>Rich Text</Badge>
                     <Badge>Gen AI Text Completion</Badge>
@@ -399,13 +413,72 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <Button
-                asChild
-                variant="outline"
-                className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-              >
-                <Link href="https://wysiwyg-ai.com">Live Site</Link>
-              </Button>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://wysiwyg-ai.com">
+                    {" "}
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
+            <div className="flex justify-center sm:block">
+              <Image
+                src={bot_news}
+                alt="Thumbnail"
+                width={225}
+                height={175}
+                className="p-1 overflow-hidden shadow-md bg-background h-[262.5px] w-[337.5px] border border-primary/20 rounded-xl mt-4 sm:-ml-10 sm:mr-8"
+              />
+            </div>
+            <div className="flex grow flex-col items-left justify-center space-y-8 w-full sm:w-[15rem] rounded-xl mt-4">
+              <div className="flex flex-col space-y-2 m-4 sm:mr-4">
+                <MDC.p className="text-sm text-muted-foreground">
+                  Sep 2024
+                </MDC.p>
+                <MDC.h4>AI Newsfeed</MDC.h4>
+                <MDC.p className="text-muted-foreground">
+                  First attempt at using workflow automation.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  Friends pinged me about Zapier and Make. But I kept figuring I
+                  could code this stuff faster.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  Then the agentic parts of each of my projects was growing.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  So I thought I would give them a shot.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  I settled on n8n because it had a self hosted option and
+                  45,000+ GitHub Stars.
+                </MDC.p>
+                <MDC.p className="text-muted-foreground">
+                  I figured a quick use case would be to aggregate RSS feeds,
+                  perform a quick google search on the topic, then request an AI
+                  summary.
+                </MDC.p>
+                <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2  mt-4">
+                    <Badge>Workflow Automation</Badge>
+                    <Badge>RSS Feeds</Badge>
+                    <Badge>Google Search</Badge>
+                    <Badge>LLM Summarization</Badge>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row gap-3 w-full items-end justify-end">
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://ai-newsletter-alpha.vercel.app/">
+                    <Globe className="w-4 h-4 mr-2 flex-none" />
+                    Demo
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
