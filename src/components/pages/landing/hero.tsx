@@ -21,7 +21,7 @@ export function Hero() {
             </p>
           </div>
           <div className="flex flex-row  space-x-4">
-            <Button
+            {/* <Button
               asChild
               variant="outline"
               className="mx-3 w-40 text-lg h-12 lg:h-14 lg:rounded-xl lg:text-xl"
@@ -34,7 +34,7 @@ export function Hero() {
               className="mx-3 w-40 text-lg h-12 lg:h-14 lg:rounded-xl lg:text-xl"
             >
               <Link href="/projects">Projects</Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
