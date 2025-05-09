@@ -33,7 +33,7 @@ export function MainNav({
         href="/"
         className="hidden sm:block text-2xl font-bold transition-colors hover:text-primary mr-4"
       >
-        JoeTaylor.me
+        Joe-Taylor.me
       </Link>
 
       {/* Desktop Navigation */}
