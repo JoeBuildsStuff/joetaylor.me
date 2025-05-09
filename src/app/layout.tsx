@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Joe Taylor's Website",
     description: "Discover what Joe Taylor is up to.",
-    url: "https://joetaylor.me",
+    url: "https://joe-taylor.me",
     siteName: "Joe Taylor's Corner of the Internet",
     locale: "en_US",
     type: "website",
