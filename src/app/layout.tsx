@@ -59,19 +59,19 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn("font-sans antialiased ", fontSans.variable)}>
-        <div
-          className={cn(
-            "min-h-screen bg-background max-w-6xl mx-auto",
-            fontSans.variable
-          )}
-        >
-          <Providers>
+        <Providers>
+          <div
+            className={cn(
+              "flex flex-col min-h-screen bg-background max-w-6xl mx-auto",
+              fontSans.variable
+            )}
+          >
             <SiteHeader />
-            {children}
-          </Providers>
-        </div>
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
-      {/* <Footer /> */}
     </html>
   );
 }
