@@ -53,7 +53,7 @@ interface TokenSpan {
 }
 
 export default function Demonstration() {
-  const [selectedModel, setSelectedModel] = useState("gpt-3.5-turbo");
+  const [selectedModel, setSelectedModel] = useState("gpt-5.1");
   const [question, setQuestion] = useState("");
   const [response, setResponse] = useState("");
   const [logProbs, setLogProbs] = useState<LogProb[]>([]);
@@ -170,11 +170,13 @@ export default function Demonstration() {
                 id="model"
                 variant="outline"
                 type="single"
-                defaultValue="gpt-3.5-turbo"
-                onValueChange={(value) => setSelectedModel(value)}
+                defaultValue="gpt-5.1"
+                onValueChange={(value) => value && setSelectedModel(value)}
               >
-                <ToggleGroupItem value="gpt-3.5-turbo">@3.5</ToggleGroupItem>
-                {/* <ToggleGroupItem value="gpt-4">@4.0</ToggleGroupItem> */}
+                <ToggleGroupItem value="gpt-5.1">@5.1</ToggleGroupItem>
+                <ToggleGroupItem value="gpt-5">@5.0</ToggleGroupItem>
+                <ToggleGroupItem value="gpt-5-mini">@5-mini</ToggleGroupItem>
+                <ToggleGroupItem value="gpt-5-nano">@5-nano</ToggleGroupItem>
               </ToggleGroup>
 
               <Button onClick={handleSubmit}>

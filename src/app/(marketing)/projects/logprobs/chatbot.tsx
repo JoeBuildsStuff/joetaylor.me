@@ -129,6 +129,8 @@ type ChatEntry = {
   userRequestedIncompleteAnswer: boolean;
 };
 
+type Model = "gpt-5.1" | "gpt-5" | "gpt-5-mini" | "gpt-5-nano";
+
 interface CustomizedLabelProps {
   x: number;
   y: number;
@@ -140,7 +142,7 @@ interface CustomizedLabelProps {
 export function Chatbot() {
   const initialContext = ``;
   const initialPrompt = ``;
-  const [selectedModel, setSelectedModel] = useState("gpt-3.5-turbo");
+  const [selectedModel, setSelectedModel] = useState<Model>("gpt-5.1");
   const [repeatCount, setRepeatCount] = useState("1");
   const [retrievalCount, setRetrievalCount] = useState("1");
   const [chatEntries, setChatEntries] = useState<ChatEntry[]>([]);
@@ -666,17 +668,27 @@ export function Chatbot() {
                     id="model"
                     variant="outline"
                     type="single"
-                    defaultValue="gpt-3.5-turbo"
-                    onValueChange={(value) => setSelectedModel(value)}
+                    defaultValue="gpt-5.1"
+                    onValueChange={(value) => value && setSelectedModel(value as Model)}
                   >
-                    <ToggleGroupItem value="gpt-3.5-turbo">
+                    <ToggleGroupItem value="gpt-5.1">
                       @<span className="hidden md:block">GPT</span>
-                      <span>3.5</span>
+                      <span>5.1</span>
                     </ToggleGroupItem>
-                    <ToggleGroupItem value="gpt-4">
+                    <ToggleGroupItem value="gpt-5">
                       {" "}
                       @<span className="hidden md:block">GPT</span>
-                      <span>4.0</span>
+                      <span>5.0</span>
+                    </ToggleGroupItem>
+                    <ToggleGroupItem value="gpt-5-mini">
+                      {" "}
+                      @<span className="hidden md:block">GPT</span>
+                      <span>mini</span>
+                    </ToggleGroupItem>
+                    <ToggleGroupItem value="gpt-5-nano">
+                      {" "}
+                      @<span className="hidden md:block">GPT</span>
+                      <span>nano</span>
                     </ToggleGroupItem>
                   </ToggleGroup>
 
