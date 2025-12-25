@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Github } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -77,13 +78,25 @@ export default function Page() {
                 <Badge>Text Semantic Classification</Badge>
               </div>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-            >
-              <Link href="https://meetingnotes-ai.com">Live Site</Link>
-            </Button>
+            <div className="flex gap-2 place-self-end mt-10 mr-2 md:mr-10">
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://meetings.joe-taylor.me">Live Site</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://github.com/JoeBuildsStuff/meetingnotes-ai-012824" className="flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -158,13 +171,25 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-            >
-              <Link href="https://jobfinder-ai.com">Live Site</Link>
-            </Button>
+            <div className="flex gap-2 place-self-end mt-10 mr-2 md:mr-10">
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://jobs.joe-taylor.me">Live Site</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://github.com/JoeBuildsStuff/jobfinder-ai-051524" className="flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -201,13 +226,25 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-            >
-              <Link href="https://chatapp-ai.com">Live Site</Link>
-            </Button>
+            <div className="flex gap-2 place-self-end mt-10 mr-2 md:mr-10">
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://chat.joe-taylor.me">Live Site</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://github.com/JoeBuildsStuff/chat" className="flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -243,13 +280,25 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-            >
-              <Link href="https://socialpost-ai.com">Live Site</Link>
-            </Button>
+            <div className="flex gap-2 place-self-end mt-10 mr-2 md:mr-10">
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://social.joe-taylor.me">Live Site</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://github.com/JoeBuildsStuff/socialpost-ai" className="flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -283,13 +332,25 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-            >
-              <Link href="https://taskmanager-ai.com">Live Site</Link>
-            </Button>
+            <div className="flex gap-2 place-self-end mt-10 mr-2 md:mr-10">
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://tasks.joe-taylor.me">Live Site</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://github.com/JoeBuildsStuff/taskmanager-ai-070824" className="flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="flex flex-col sm:flex-row h-full ml-0 sm:ml-8 grow border border-primary/20 rounded-xl p-2 pb-4">
@@ -323,13 +384,25 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
-            >
-              <Link href="https://createart-ai.com">Live Site</Link>
-            </Button>
+            <div className="flex gap-2 place-self-end mt-10 mr-2 md:mr-10">
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://art.joe-taylor.me">Live Site</Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="w-[8rem]"
+              >
+                <Link href="https://github.com/JoeBuildsStuff/createart-ai" className="flex items-center gap-2">
+                  <Github className="h-4 w-4" />
+                  GitHub
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </div>

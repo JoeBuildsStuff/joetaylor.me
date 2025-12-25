@@ -24,7 +24,7 @@ import bot_art from "../../public/projects/createart-ai/createart_ai.png";
 import wysiwyg from "../../public/projects/wysiwyg-ai/wysiwyg-ai.png";
 import bot_news from "../../public/projects/news-ai/news-ai.png";
 import wysiwyg_ai from "../../public/projects/wysiwyg-ai/wysiwyg_ai.png";
-import { Globe } from "lucide-react";
+import { Globe, Github } from "lucide-react";
 
 import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 
@@ -100,9 +100,15 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://meetingnotes-ai.com">
+                  <Link href="https://meetings.joe-taylor.me">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/meetingnotes-ai-012824">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -188,10 +194,16 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://jobfinder-ai.com">
+                  <Link href="https://jobs.joe-taylor.me">
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/jobfinder-ai-051524">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -235,10 +247,16 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://chatapp-ai.com">
+                  <Link href="https://chat.joe-taylor.me">
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/chat">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -281,9 +299,15 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://socialpost-ai.com">
+                  <Link href="https://social.joe-taylor.me">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/socialpost-ai">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -324,9 +348,15 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://taskmanager-ai.com">
+                  <Link href="https://tasks.joe-taylor.me">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/taskmanager-ai-070824">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -367,10 +397,16 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://createart-ai.com">
+                  <Link href="https://art.joe-taylor.me">
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/createart-ai">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -419,6 +455,12 @@ export default function Home() {
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/wysiwyg-ai-080624">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
@@ -476,6 +518,12 @@ export default function Home() {
                   <Link href="https://ai-newsletter-alpha.vercel.app/">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" className="mr-4">
+                  <Link href="https://github.com/JoeBuildsStuff/ai-newsletter">
+                    <Github className="w-4 h-4 mr-2 flex-none" />
+                    GitHub
                   </Link>
                 </Button>
               </div>
