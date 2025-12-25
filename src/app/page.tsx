@@ -100,7 +100,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://meetingnotes-ai.com">
+                  <Link href="https://meetings.joe-taylor.me">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
                   </Link>
@@ -188,7 +188,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://jobfinder-ai.com">
+                  <Link href="https://jobs.joe-taylor.me">
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
@@ -235,7 +235,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://chatapp-ai.com">
+                  <Link href="https://chat.joe-taylor.me">
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
@@ -281,7 +281,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://socialpost-ai.com">
+                  <Link href="https://social.joe-taylor.me">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
                   </Link>
@@ -324,7 +324,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://taskmanager-ai.com">
+                  <Link href="https://tasks.joe-taylor.me">
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo
                   </Link>
@@ -367,7 +367,7 @@ export default function Home() {
               </div>
               <div className="flex flex-row gap-3 w-full items-end justify-end">
                 <Button asChild variant="outline" className="mr-4">
-                  <Link href="https://createart-ai.com">
+                  <Link href="https://art.joe-taylor.me">
                     {" "}
                     <Globe className="w-4 h-4 mr-2 flex-none" />
                     Demo

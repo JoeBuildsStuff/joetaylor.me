@@ -82,7 +82,7 @@ export default function Page() {
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://meetingnotes-ai.com">Live Site</Link>
+              <Link href="https://meetings.joe-taylor.me">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function Page() {
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://jobfinder-ai.com">Live Site</Link>
+              <Link href="https://jobs.joe-taylor.me">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -206,7 +206,7 @@ export default function Page() {
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://chatapp-ai.com">Live Site</Link>
+              <Link href="https://chat.joe-taylor.me">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -248,7 +248,7 @@ export default function Page() {
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://socialpost-ai.com">Live Site</Link>
+              <Link href="https://social.joe-taylor.me">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -288,7 +288,7 @@ export default function Page() {
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://taskmanager-ai.com">Live Site</Link>
+              <Link href="https://tasks.joe-taylor.me">Live Site</Link>
             </Button>
           </div>
         </div>
@@ -328,7 +328,7 @@ export default function Page() {
               variant="outline"
               className="w-[8rem] place-self-end mt-10 mr-2 md:mr-10"
             >
-              <Link href="https://createart-ai.com">Live Site</Link>
+              <Link href="https://art.joe-taylor.me">Live Site</Link>
             </Button>
           </div>
         </div>
