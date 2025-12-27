@@ -127,7 +127,7 @@ async function determineAccuracy(
   question: string,
   expectedAnswer: string,
   answer: string,
-  model: string = "gpt-3.5-turbo"
+  model: string = "gpt-5.1"
 ): Promise<DetermineAccuracyResult> {
   try {
     const answerRelevanceResponse = await openai.chat.completions.create({
@@ -218,7 +218,7 @@ interface ContentCompletenessCheckResult {
 async function checkContentCompleteness(
   additionalContext: string,
   question: string,
-  model: string = "gpt-3.5-turbo"
+  model: string = "gpt-5.1"
 ): Promise<ContentCompletenessCheckResult> {
   try {
     const contentCompletnessCheckResponse =
@@ -343,7 +343,7 @@ function determineRelevance(logprobs: any | undefined): RelevanceResult {
  */
 async function constructAnswer(
   messages: Message[],
-  model: string = "gpt-3.5-turbo"
+  model: string = "gpt-5.1"
 ): Promise<{ answer: string; perplexity: number }> {
   try {
     // Format the messages array to match the OpenAI API expectations
